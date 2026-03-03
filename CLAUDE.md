@@ -160,7 +160,6 @@ npm run dev
 **Readability:**
 - Use descriptive variable and function names
 - Keep functions small and focused (single responsibility)
-- Add JSDoc comments for complex business logic
 - Prefer self-documenting code over extensive comments
 - Use consistent naming patterns across all starters
 
@@ -528,12 +527,6 @@ requiredEnvVars.forEach(envVar => {
 
 ### Documentation
 
-**JSDoc Comments:**
-- All new functions, interfaces, classes must have JSDoc style comments
-- Include @param tags for all parameters with types and descriptions
-- Include @returns tag for return values with type and description
-- Use descriptive comments that explain the purpose and behavior
-
 **Import Patterns:**
 - Use `type` imports for TypeScript types: `import type React from 'react'`
 - Import Sitecore components: `import { Text, RichText, Image, useSitecore } from '@sitecore-content-sdk/nextjs'`
@@ -553,21 +546,6 @@ import { ComponentProps } from '@/lib/component-props';
 import { NoDataFallback } from '@/utils/NoDataFallback';
 import { Default as ImageWrapper } from '@/components/image/ImageWrapper.dev';
 import { ButtonBase } from '@/components/button-component/ButtonComponent';
-
-/**
- * Hero component for displaying prominent content on XM Cloud pages
- * @param {HeroProps} props - Component props from XM Cloud datasource
- * @returns {JSX.Element} The rendered hero component with variants support
- */
-export const HeroDefault: React.FC<HeroProps> = (props) => {
-  const { fields, isPageEditing } = props;
-  
-  if (!fields?.data?.datasource) {
-    return <NoDataFallback componentName="Hero" />;
-  }
-  
-  // Component implementation
-};
 ```
 
 ## Sitecore XM Cloud Rules

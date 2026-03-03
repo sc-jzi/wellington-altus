@@ -25,11 +25,6 @@ type CardProps = {
   editable?: boolean;
 };
 
-/**
- * Card
- * @param props The UI data coming from the parent component
- * @returns
- */
 export const Default: React.FC<CardProps> = (props) => {
   const { image, heading, description, link, className, icon, editable } =
     props;

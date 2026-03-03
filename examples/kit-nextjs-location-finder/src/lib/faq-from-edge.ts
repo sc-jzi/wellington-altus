@@ -21,10 +21,16 @@ interface FaqChildResult {
 
 interface FaqQueryResult {
   item?: {
+    updated?: { jsonValue?: string };
     children?: {
       results?: FaqChildResult[];
     };
   };
+}
+
+export interface FaqEdgeResult {
+  items: FaqItem[];
+  lastModified: string;
 }
 
 function extractFieldValue(field?: EdgeFieldValue): string {
@@ -41,6 +47,7 @@ function buildFaqQuery(fragmentType: string): string {
   return `
     query FaqQuery($path: String!, $language: String!) {
       item(path: $path, language: $language) {
+        updated: field(name: "__Updated") { jsonValue }
         children(first: ${MAX_CHILDREN}) {
           results {
             ... on ${fragmentType} {
@@ -60,9 +67,9 @@ function buildFaqPath(): string {
   return `/sitecore/content/alaris/${siteName}${FAQ_DATA_PATH_SUFFIX}`;
 }
 
-export async function fetchFaqFromEdge(): Promise<FaqItem[]> {
+export async function fetchFaqFromEdge(): Promise<FaqEdgeResult> {
   const path = buildFaqPath();
-  if (!path) return [];
+  if (!path) return { items: [], lastModified: new Date().toISOString() };
 
   const language = scConfig.defaultLanguage || 'en';
 
@@ -72,14 +79,18 @@ export async function fetchFaqFromEdge(): Promise<FaqItem[]> {
       { path, language }
     );
 
-    return (result?.item?.children?.results ?? [])
+    const items = (result?.item?.children?.results ?? [])
       .map((child) => ({
         question: extractFieldValue(child?.question),
         answer: extractFieldValue(child?.answer),
       }))
       .filter((item) => item.question && item.answer);
+
+    const lastModified = result?.item?.updated?.jsonValue || new Date().toISOString();
+
+    return { items, lastModified };
   } catch (error) {
     console.error('[fetchFaqFromEdge] GraphQL request failed:', error);
-    return [];
+    return { items: [], lastModified: new Date().toISOString() };
   }
 }

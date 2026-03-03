@@ -1,39 +1,18 @@
 import { aiJsonResponse } from '@/lib/ai-json-response';
 
-/**
- * Revalidation period for the service endpoint (1 hour).
- * Uses Incremental Static Regeneration for optimal caching.
- */
 export const revalidate = 3600;
 
-/**
- * Represents a service or capability offered by the site
- */
 interface Service {
-  /** Human-readable name of the service */
   name: string;
-  /** Detailed description of what the service provides */
   description: string;
-  /** Category grouping for the service */
   category: string;
 }
 
-/**
- * Response structure for the service endpoint
- */
 interface ServiceResponse {
-  /** Array of services offered by the site */
   services: Service[];
-  /** ISO 8601 timestamp of when the data was last modified */
   lastModified: string;
 }
 
-/**
- * Services and capabilities for the Skate Park Demo Starter Kit
- *
- * This starter is a simple demo site showcasing component examples
- * and XM Cloud integration patterns for developers.
- */
 const services: Service[] = [
   {
     name: 'Component Showcase',
@@ -85,15 +64,6 @@ const services: Service[] = [
   },
 ];
 
-/**
- * Serves /ai/service.json (via rewrite) – site services and capabilities for AI assistants (GEO).
- *
- * Exposes structured information about the site's services and capabilities
- * for AI assistants and search engines. Application/json, Cache-Control 1h with
- * stale-while-revalidate. Publicly accessible.
- *
- * @returns JSON response with services array and lastModified timestamp
- */
 export async function GET() {
   const response: ServiceResponse = {
     services,

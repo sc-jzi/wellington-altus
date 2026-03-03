@@ -2,10 +2,6 @@ import { JSX } from 'react';
 import { JsonLdValue, toJsonLdString } from 'src/lib/structured-data/jsonld';
 
 type StructuredDataProps = {
-  /**
-   * A stable id prevents duplicate JSON-LD nodes when the same component
-   * can be rendered multiple times (e.g. editing / layout variations).
-   */
   id: string;
   data: JsonLdValue;
 };

@@ -115,13 +115,6 @@ export const generateStaticParams = async () => {
   return [];
 };
 
-/**
- * Generates metadata for the page including Open Graph and Twitter Card tags.
- * These tags enable rich previews when shared on social platforms and help
- * generative AI engines understand page context for ranking and snippet generation.
- * @param {PageProps} params - Page parameters including path, site, and locale
- * @returns {Promise<Metadata>} Next.js metadata object with OG and Twitter card tags
- */
 export const generateMetadata = async ({ params }: PageProps) => {
   const headersList = await headers();
   const host = headersList.get('host') || '';

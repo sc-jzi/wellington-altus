@@ -16,17 +16,23 @@ interface EdgeFieldValue {
 }
 
 interface ServiceChildResult {
-  name?: string;
+  serviceName?: EdgeFieldValue;
   description?: EdgeFieldValue;
   category?: EdgeFieldValue;
 }
 
 interface ServiceQueryResult {
   item?: {
+    updated?: { jsonValue?: string };
     children?: {
       results?: ServiceChildResult[];
     };
   };
+}
+
+export interface ServiceEdgeResult {
+  services: ServiceItem[];
+  lastModified: string;
 }
 
 function extractFieldValue(field?: EdgeFieldValue): string {
@@ -43,10 +49,11 @@ function buildServiceQuery(fragmentType: string): string {
   return `
     query ServiceQuery($path: String!, $language: String!) {
       item(path: $path, language: $language) {
+        updated: field(name: "__Updated") { jsonValue }
         children(first: ${MAX_CHILDREN}) {
           results {
             ... on ${fragmentType} {
-              name
+              serviceName: field(name: "name") { jsonValue }
               description { jsonValue }
               category { jsonValue }
             }
@@ -63,9 +70,9 @@ function buildServicePath(): string {
   return `/sitecore/content/solterra/${siteName}${SERVICE_DATA_PATH_SUFFIX}`;
 }
 
-export async function fetchServicesFromEdge(): Promise<ServiceItem[]> {
+export async function fetchServicesFromEdge(): Promise<ServiceEdgeResult> {
   const path = buildServicePath();
-  if (!path) return [];
+  if (!path) return { services: [], lastModified: new Date().toISOString() };
 
   const language = scConfig.defaultLanguage || 'en';
 
@@ -75,15 +82,19 @@ export async function fetchServicesFromEdge(): Promise<ServiceItem[]> {
       { path, language }
     );
 
-    return (result?.item?.children?.results ?? [])
+    const services = (result?.item?.children?.results ?? [])
       .map((child) => ({
-        name: (child?.name ?? '').trim(),
+        name: extractFieldValue(child?.serviceName),
         description: extractFieldValue(child?.description),
         category: extractFieldValue(child?.category),
       }))
       .filter((item) => item.name && item.description);
+
+    const lastModified = result?.item?.updated?.jsonValue || new Date().toISOString();
+
+    return { services, lastModified };
   } catch (error) {
     console.error('[fetchServicesFromEdge] GraphQL request failed:', error);
-    return [];
+    return { services: [], lastModified: new Date().toISOString() };
   }
 }

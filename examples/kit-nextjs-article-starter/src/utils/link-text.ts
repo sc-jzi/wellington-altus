@@ -24,13 +24,6 @@ export const isGenericLinkText = (text: string | undefined | null): boolean => {
   return genericPatterns.some((pattern) => pattern.test(text.trim()));
 };
 
-/**
- * Generates descriptive link text from context
- * @param linkText - Original link text from CMS
- * @param contextTitle - Title or heading from surrounding context
- * @param linkDestination - The href or destination URL
- * @returns Descriptive link text
- */
 export const generateDescriptiveLinkText = (
   linkText: string | undefined | null,
   contextTitle?: string | undefined | null,
@@ -78,12 +71,6 @@ export const generateDescriptiveLinkText = (
   return 'Read article';
 };
 
-/**
- * Gets the best available link text for SEO
- * @param linkField - The link field from Sitecore
- * @param contextTitle - Optional title from surrounding context
- * @returns Descriptive link text
- */
 export const getDescriptiveLinkText = (
   linkField: { value?: { text?: string; href?: string } } | null | undefined,
   contextTitle?: string | undefined | null

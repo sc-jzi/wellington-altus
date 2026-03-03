@@ -10,11 +10,6 @@ type StructuredDataProps = {
   data: JsonLdValue;
 };
 
-/**
- * Component to render JSON-LD structured data
- * @param id - Unique identifier to prevent duplicate nodes
- * @param data - The structured data object to render as JSON-LD
- */
 export function StructuredData({ id, data }: StructuredDataProps): JSX.Element {
   if (!data || (typeof data === 'object' && Object.keys(data).length === 0)) {
     return <></>;

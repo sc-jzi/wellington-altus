@@ -22,11 +22,6 @@ export type ImageWrapperProps = {
   [key: string]: any;
 };
 
-/**
- * Client-side image wrapper with Sitecore editing support, lazy loading, and optimization options.
- * @param {ImageWrapperProps} props - Image field, class names, and pass-through props
- * @returns {JSX.Element} Rendered image (ContentSdk Image in edit/preview, NextImage otherwise)
- */
 export const ImageWrapperClient: React.FC<ImageWrapperProps> = (props) => {
   const { image, className, wrapperClass, sizes, ...rest } = props;
   const { page } = useSitecore();

@@ -9,13 +9,6 @@ interface FaqItem {
   answer: string;
 }
 
-/**
- * Serves /ai/faq.json (via rewrite) for AI crawlers and answer engines (GEO/AEO).
- * Response: array of { question, answer } objects, 3–10 items. Application/json,
- * Cache-Control 24h. Publicly accessible.
- *
- * @returns JSON array of FAQ items with question and answer only
- */
 export async function GET() {
   const rawItems = Array.isArray(faqData.items) ? faqData.items : [];
   const items: FaqItem[] = rawItems

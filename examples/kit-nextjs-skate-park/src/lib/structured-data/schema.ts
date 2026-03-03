@@ -22,13 +22,6 @@ export interface OrganizationSchema {
   description?: string;
 }
 
-/**
- * Generate WebSite JSON-LD structured data for the site
- * @param siteName - Name of the website
- * @param siteUrl - Base URL of the website
- * @param description - Optional description
- * @returns JSON-LD value for WebSite schema
- */
 export function generateWebSiteSchema(
   siteName: string,
   siteUrl: string,
@@ -53,14 +46,6 @@ export function generateWebSiteSchema(
   return schema as JsonLdValue;
 }
 
-/**
- * Generate Organization JSON-LD structured data
- * @param name - Organization name
- * @param url - Organization URL
- * @param logo - Optional logo URL
- * @param description - Optional description
- * @returns JSON-LD value for Organization schema
- */
 export function generateOrganizationSchema(
   name: string,
   url: string,
