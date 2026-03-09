@@ -90,7 +90,10 @@ export async function fetchServicesFromEdge(): Promise<ServiceEdgeResult> {
       }))
       .filter((item) => item.name && item.description);
 
-    const lastModified = result?.item?.updated?.jsonValue || new Date().toISOString();
+    const lastModified =
+      extractFieldValue(
+        result?.item?.updated ? { jsonValue: result.item.updated.jsonValue } : undefined
+      ) || new Date().toISOString();
 
     return { services, lastModified };
   } catch (error) {

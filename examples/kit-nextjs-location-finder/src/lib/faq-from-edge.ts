@@ -86,7 +86,10 @@ export async function fetchFaqFromEdge(): Promise<FaqEdgeResult> {
       }))
       .filter((item) => item.question && item.answer);
 
-    const lastModified = result?.item?.updated?.jsonValue || new Date().toISOString();
+    const lastModified =
+      extractFieldValue(
+        result?.item?.updated ? { jsonValue: result.item.updated.jsonValue } : undefined
+      ) || new Date().toISOString();
 
     return { items, lastModified };
   } catch (error) {
