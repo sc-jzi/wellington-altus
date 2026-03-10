@@ -7,7 +7,7 @@ export async function GET() {
   const { services, lastModified } = await fetchServicesFromEdge();
 
   return aiJsonResponse(
-    { items: services, lastModified },
+    { services, lastModified },
     {
       maxAge: 3600,
       sMaxAge: 3600,

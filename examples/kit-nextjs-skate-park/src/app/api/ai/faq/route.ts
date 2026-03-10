@@ -20,5 +20,5 @@ export async function GET() {
     .filter((item) => item.question && item.answer);
 
   const payload = items.length >= MIN_ITEMS ? items : [];
-  return aiJsonResponse(payload);
+  return aiJsonResponse({items: payload, lastModified: faqData.lastModified});
 }
