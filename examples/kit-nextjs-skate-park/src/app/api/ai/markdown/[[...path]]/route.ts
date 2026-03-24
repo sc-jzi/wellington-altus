@@ -21,7 +21,7 @@ function ensureSiteAndLocale(request: NextRequest): {
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { path?: string[] } },
+  { params }: { params: Promise<{ path?: string[] }> },
 ): Promise<NextResponse> {
   try {
     if (process.env.NEXT_PUBLIC_ENABLE_AIMARKDOWN !== "true") {
@@ -29,7 +29,8 @@ export async function GET(
     }
 
     const { site, locale } = ensureSiteAndLocale(request);
-    const path = params?.path ?? [];
+    const { path: pathSegments } = await params;
+    const path = pathSegments ?? [];
 
     const page = await client.getPage(path, { site, locale });
     if (!page || !page.layout?.sitecore?.route) {
