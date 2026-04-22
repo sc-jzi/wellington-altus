@@ -20,15 +20,15 @@ Languages:
         sitecore\nick.robinett@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b3db552a-6856-48b5-a5d0-4be7ec6addbf"
+      Value: "b610719e-948a-4fda-a9ac-ffbe3f223f57"
     - ID: "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d"
       Hint: LogoImage
       Value: |
-        <image mediaid="f31fc6b1-bd57-4b73-86dd-4797f67d1385" />
+        <Image src="https://jzi-wellington-altus.sitecoresandbox.cloud/api/public/content/51abfba5fa6c45259159fb80428de008?v=3ed34810" dam-id="ky3w9AuIQh6Yt1TXun7fEA" width="768" height="236" alt="imgi_22_WA_Logo_PMS_432C-768x236.png" dam-content-type="Image" thumbnailsrc="https://jzi-wellington-altus.sitecoresandbox.cloud/api/gateway/82765/thumbnail" />
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\nick.robinett@sitecore.com
+        sitecore\johannes.zijlstra@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260330T142624Z
+      Value: 20260422T162451Z

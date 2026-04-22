@@ -22,12 +22,15 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20251030T165629Z
     - ID: "3351af3f-868e-47fc-b5c3-ad0446981faf"
       Hint: Title
-      Value: Our People and Products Make More Possible
+      Value: Independent Private Wealth Management 
     - ID: "3cba1ba9-9f99-4a72-9144-7f02b3bdd158"
       Hint: Link
       Value: |
@@ -38,17 +41,18 @@ Languages:
         sitecore\johannes.zijlstra@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "cfcd3463-3046-4793-a822-15890db5da43"
+      Value: "4d880296-0dac-46f4-a4e0-b64a18fe5e5a"
     - ID: "ad84ce04-c8f0-485e-bf12-9b321c6ff2fb"
       Hint: Text
-      Value: <p>Owens Corning is a building products leader committed to building a sustainable future through material innovation.</p>
+      Value: |
+        <div class="ck-content"><p>Holistic Wealth Planning, Investment and Protection</p></div>
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\nick.robinett@sitecore.com
+        sitecore\johannes.zijlstra@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260331T180404Z
+      Value: 20260422T162834Z
 - Language: "fr-CA"
   Versions:
   - Version: 1
