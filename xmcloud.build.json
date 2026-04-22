@@ -73,6 +73,9 @@
       "runCommand": "next:start"
     }
   },
+  "deployItems": {
+    "modules": ["prosperabank"]
+  },
   "postActions": {
     "actions": {
       "warmUpCm": {
