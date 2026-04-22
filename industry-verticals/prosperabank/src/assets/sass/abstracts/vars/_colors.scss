@@ -1,37 +1,38 @@
-// Financial - Owens Corning premium inspired styling
+// Financial (ProsperaFinancial / SitecoreAI demo) — Wellington-Altus–inspired palette:
+// charcoal typography, warm neutrals, restrained teal accent, minimal chrome.
 .site-financial {
-  --text-body: #1b1b1b;
+  --text-body: #1f1f1f;
   --text-body-inverted: #fff;
-  --text-colored: #1b1b1b;
-  --text-footer: #fff;
-  --text-accent: #d6158c;
+  --text-colored: #1f1f1f;
+  --text-footer: #d4d4d4;
+  --text-accent: #2a4a55;
   --bg-body: #fff;
-  --bg-footer: #111;
-  --bg-main: #f6f6f6;
-  --bg-main-alt: #f1f1f1;
-  --bg-color: #111;
-  --bg-saturated: #d6158c;
-  --bg-accent: #d6158c;
-  --border-color: #d7d7d7;
-  --hr-color: #d7d7d7;
-  --roundness: 0.1rem;
+  --bg-footer: #121212;
+  --bg-main: #f7f7f6;
+  --bg-main-alt: #f0efed;
+  --bg-color: #1a1a1a;
+  --bg-saturated: #1a1a1a;
+  --bg-accent: #1a1a1a;
+  --border-color: #e0dfdc;
+  --hr-color: #d8d6d3;
+  --roundness: 0.25rem;
 
   .dark & {
-    --text-body: #f4f4f4;
-    --text-body-inverted: #111;
-    --text-colored: #fff;
-    --text-footer: #f4f4f4;
-    --text-accent: #ff4bb2;
-    --bg-body: #141414;
-    --bg-footer: #0a0a0a;
-    --bg-main: #1d1d1d;
-    --bg-main-alt: #141414;
-    --bg-color: #f4f4f4;
-    --bg-saturated: #ff4bb2;
-    --bg-accent: #ff4bb2;
-    --border-color: #3a3a3a;
-    --hr-color: #3a3a3a;
-    --roundness: 0.1rem;
+    --text-body: #f0f0f0;
+    --text-body-inverted: #0f0f0f;
+    --text-colored: #f0f0f0;
+    --text-footer: #e2e2e2;
+    --text-accent: #9eb8bd;
+    --bg-body: #14181c;
+    --bg-footer: #0c0e10;
+    --bg-main: #1a2024;
+    --bg-main-alt: #14181c;
+    --bg-color: #f0f0f0;
+    --bg-saturated: #f0f0f0;
+    --bg-accent: #f0f0f0;
+    --border-color: #2a3238;
+    --hr-color: #2a3238;
+    --roundness: 0.25rem;
   }
 }
 

@@ -4,7 +4,7 @@
   color: inherit;
   border: none;
   margin: 10px 0;
-  cursor: pointer;
+  cursor: default;
 
   .selected-language {
     margin-right: 1.25rem;
@@ -35,5 +35,62 @@
     .chevron-icon {
       transform: rotate(180deg);
     }
+  }
+}
+
+.language-switcher--inline {
+  margin: 0;
+
+  .language-switcher__group {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .language-switcher__pill {
+    appearance: none;
+    margin: 0;
+    padding: 0.35rem 0.65rem;
+    min-width: 2.25rem;
+    font-family: var(--font-family);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 1;
+    color: var(--text-body);
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    cursor: pointer;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease;
+
+    &:hover {
+      border-color: rgb(0 0 0 / 12%);
+    }
+
+    &.is-active {
+      color: var(--text-body-inverted);
+      background: var(--text-body);
+      border-color: var(--text-body);
+    }
+  }
+}
+
+.site-financial .language-switcher--inline .language-switcher__pill {
+  color: #2a2a2a;
+
+  &.is-active {
+    color: #fff;
+    background: #1f1f1f;
+    border-color: #1f1f1f;
+  }
+
+  &:hover:not(.is-active) {
+    border-color: rgb(0 0 0 / 18%);
   }
 }

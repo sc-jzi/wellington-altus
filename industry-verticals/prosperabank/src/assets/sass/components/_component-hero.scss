@@ -78,3 +78,53 @@
     }
   }
 }
+
+.site-financial .hero {
+  min-height: min(88vh, 820px);
+  border-bottom: none;
+
+  img {
+    filter: saturate(0.92) contrast(1.05) brightness(0.92);
+  }
+
+  .content-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 5.5rem;
+    background: linear-gradient(
+      165deg,
+      rgb(8 18 28 / 78%) 0%,
+      rgb(12 28 40 / 55%) 45%,
+      rgb(6 12 18 / 35%) 100%
+    );
+
+    .top-layout {
+      max-width: 56rem;
+      margin: 0 auto;
+    }
+
+    .title {
+      max-width: 22ch;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      line-height: 1.05;
+    }
+
+    .subtitle {
+      margin-left: auto;
+      margin-right: auto;
+      font-family: var(--font-family);
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+    }
+
+    .btn-array {
+      margin-top: 2rem;
+    }
+  }
+}

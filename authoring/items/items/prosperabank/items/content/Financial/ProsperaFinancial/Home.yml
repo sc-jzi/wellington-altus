@@ -1,4 +1,4 @@
----
+﻿---
 ID: "b2a38fb8-2e85-4d58-afe5-c12beccbee3a"
 Parent: "08d9417d-5071-46ff-896b-eb76b0790526"
 Template: "5282d418-6c18-46eb-85af-9116cde9e6eb"
@@ -314,24 +314,24 @@ Languages:
       Value: "{171CCFD4-8543-428E-9A9B-8E6557E63B6D}"
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: Doors
+      Value: Home
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\kaitlyn.folsom@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ba8238e2-afb2-4787-8304-e86bdb49dccc"
+      Value: "4543f701-6de1-4f5a-b2fb-7afd2484bc60"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\nick.robinett@sitecore.com
+        sitecore\johannes.zijlstra@sitecore.com
     - ID: "d77eab5a-d654-445f-b15c-d32283737e1f"
       Hint: Title
-      Value: "PLAY! Doors"
+      Value: "Wellington-Altus - Independent Private Wealth Management"
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260331T131217Z
+      Value: 20260422T154309Z
 - Language: "fr-CA"
   Versions:
   - Version: 1

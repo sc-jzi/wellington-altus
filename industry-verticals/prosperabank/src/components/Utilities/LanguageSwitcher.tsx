@@ -1,6 +1,6 @@
 import { useSitecore } from '@sitecore-content-sdk/nextjs';
 import { useRouter } from 'next/router';
-import React, { useCallback, useMemo, useState, JSX } from 'react';
+import { useCallback, useMemo, type JSX } from 'react';
 
 export const Default = (): JSX.Element => {
   const { page } = useSitecore();
@@ -8,13 +8,11 @@ export const Default = (): JSX.Element => {
   const router = useRouter();
   const { pathname, asPath, query } = router;
 
-  const [showLanguageDropdown, setShowLanguageDropdown] = useState(false);
-
   const availableLanguages = useMemo(
     () => [
-      { code: 'en', label: 'English' },
-      { code: 'fr-CA', label: 'Français' },
-      { code: 'ja-JP', label: '日本語' },
+      { code: 'en', short: 'EN', label: 'English' },
+      { code: 'fr-CA', short: 'FR', label: 'Français' },
+      { code: 'ja-JP', short: 'JA', label: '日本語' },
     ],
     []
   );
@@ -39,31 +37,25 @@ export const Default = (): JSX.Element => {
   );
 
   return (
-    <div
-      className={`language-switcher ${showLanguageDropdown ? 'expanded' : ''}`}
-      onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}
-    >
-      <span className="selected-language">
-        {availableLanguages.find((lang) => lang.code === page.locale)?.label}
-      </span>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="chevron-icon"
-        viewBox="0 0 512 512"
-        width={16}
-        fill="currentColor"
-      >
-        <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-      </svg>
-      {showLanguageDropdown && (
-        <div className="language-dropdown">
-          {availableLanguages.map((lang) => (
-            <span key={lang.code} onClick={() => changeLanguage(lang.code)}>
-              {lang.label}
-            </span>
-          ))}
-        </div>
-      )}
-    </div>
+    <nav className="language-switcher language-switcher--inline" aria-label="Language">
+      <div className="language-switcher__group">
+        {availableLanguages.map((lang) => {
+          const isActive = page.locale === lang.code;
+          return (
+            <button
+              type="button"
+              key={lang.code}
+              className={`language-switcher__pill${isActive ? ' is-active' : ''}`}
+              title={lang.label}
+              aria-pressed={isActive}
+              aria-current={isActive ? 'true' : undefined}
+              onClick={() => changeLanguage(lang.code)}
+            >
+              {lang.short}
+            </button>
+          );
+        })}
+      </div>
+    </nav>
   );
 };

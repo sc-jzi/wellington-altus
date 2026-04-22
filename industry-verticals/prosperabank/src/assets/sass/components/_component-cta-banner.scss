@@ -150,3 +150,19 @@
     }
   }
 }
+
+.site-financial .cta-banner .container-widest-fluid {
+  border-radius: 0.35rem;
+  box-shadow: 0 16px 48px rgb(0 0 0 / 8%);
+
+  .button-main {
+    border-radius: 999px;
+    border: 1px solid rgb(255 255 255 / 35%);
+
+    &:hover {
+      filter: none;
+      background-color: #fff !important;
+      color: #1a1a1a !important;
+    }
+  }
+}

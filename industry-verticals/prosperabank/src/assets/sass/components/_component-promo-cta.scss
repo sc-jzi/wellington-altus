@@ -420,3 +420,36 @@
     }
   }
 }
+
+// Financial site: replace legacy LMCU blue hero band with moody navy/teal and WA typography.
+.site-financial .promo-cta.with-background-image,
+.site-financial .promo-cta.with-background-image.with-background-image {
+  background-color: #0c1a22 !important;
+
+  &.with-background-image.with-background-image {
+    background-color: #0c1a22 !important;
+  }
+
+  .promo-cta-eyebrow {
+    font-family: var(--font-family) !important;
+    letter-spacing: 0.18em !important;
+    color: rgb(255 255 255 / 72%) !important;
+  }
+
+  .promo-cta-heading {
+    font-family: var(--font-family-display) !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+  }
+
+  .promo-cta-subtitle,
+  .promo-cta-body,
+  .promo-cta-body p,
+  .promo-cta-body strong,
+  .promo-cta-body b {
+    font-family: var(--font-family) !important;
+    color: rgb(255 255 255 / 92%) !important;
+  }
+}

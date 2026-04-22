@@ -163,3 +163,7 @@ $hamburger-margin: 18px;
     }
   }
 }
+
+.site-financial .navigation.navigation-horizontal .component-content ul {
+  gap: clamp(0.65rem, 1.8vw, 1.35rem);
+}

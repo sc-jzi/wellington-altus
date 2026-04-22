@@ -2,15 +2,37 @@
 @import 'src/assets/sass/abstracts/mixins';
 
 .site-financial {
-  --button-main-color: #fff;
-  --button-main-bg-color: var(--bg-accent);
-  --button-secondary-color: var(--bg-color);
+  --button-main-color: #1a1a1a;
+  --button-main-bg-color: #fff;
+  --button-secondary-color: #1a1a1a;
   --button-simple-color: var(--text-accent);
-  --button-padding: 0.875rem 1.75rem 0.8rem;
-  --button-roundness: 0.15rem;
-  --button-font-weight: 700;
-  --button-font-size: 0.95rem;
+  --button-padding: 0.85rem 1.85rem 0.8rem;
+  --button-roundness: 999px;
+  --button-font-weight: 600;
+  --button-font-size: 0.8125rem;
   --button-text-transform: uppercase;
+}
+
+.site-financial .button-main {
+  border: 1px solid rgb(0 0 0 / 8%);
+  letter-spacing: 0.1em;
+
+  &:hover {
+    filter: none;
+    background-color: #f2f2f2;
+    transform: none;
+  }
+}
+
+.site-financial .button-secondary {
+  border-width: 1px;
+  border-radius: 999px;
+
+  &:hover {
+    color: #fff;
+    background: #1a1a1a;
+    border-color: #1a1a1a;
+  }
 }
 
 .site-services {

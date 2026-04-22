@@ -129,15 +129,30 @@
 }
 
 .site-financial .hero-banner {
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
+
+  .img-column img {
+    border-radius: 0.35rem;
+    box-shadow: 0 14px 36px rgb(0 0 0 / 8%);
+  }
+
   .content-column {
     .title,
     h1,
     h2,
     h3 {
+      font-family: var(--font-family-display);
       text-transform: uppercase;
-      font-weight: 800;
-      line-height: 1;
-      letter-spacing: 0.01em;
+      font-weight: 600;
+      line-height: 1.05;
+      letter-spacing: 0.07em;
+    }
+
+    .rich-content {
+      opacity: 0.88;
+      font-size: 1.02rem;
+      line-height: 1.65;
     }
   }
 }

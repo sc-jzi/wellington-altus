@@ -113,3 +113,27 @@
     }
   }
 }
+
+.site-financial .footer {
+  padding-top: 3rem;
+  letter-spacing: 0.02em;
+
+  hr {
+    border-top-width: 1px;
+    opacity: 0.35;
+  }
+
+  .footnote {
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+  }
+
+  &.with-socials .links-socials > a {
+    background-color: rgb(255 255 255 / 8%);
+    border: 1px solid rgb(255 255 255 / 12%);
+
+    &:hover {
+      background-color: rgb(255 255 255 / 14%);
+    }
+  }
+}
