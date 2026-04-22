@@ -1,0 +1,47 @@
+a[target='_blank']:after {
+  content: '\1F5D7'
+}
+
+/*
+  Hides Sitecore editor markup,
+  if you run the app in connected mode while the Sitecore cookies
+  are set to edit mode.
+*/
+.scChromeData, .scpm { display: none !important; }
+
+/*
+  Styles for default JSS error components
+*/
+.sc-jss-editing-error,
+.sc-jss-placeholder-error {
+  padding: 1em;
+  background-color: lightyellow;
+}
+
+/* 
+  Style for default content block - Updated to match LMCU styling
+*/
+.contentTitle {
+    font-size: 3.125rem; /* ~50px matching LMCU */
+    font-weight: 300; /* Light weight like LMCU */
+    line-height: 1.1;
+    color: #343434; /* LMCU dark gray */
+    font-family: 'Lato', 'Source Sans 3', Helvetica, Arial, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: #343434; /* Dark gray matching LMCU */
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #034c81; /* Professional blue accent */
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px solid #034c81;
+  outline-offset: 2px;
+}

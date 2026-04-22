@@ -1,0 +1,143 @@
+.hero-banner {
+  margin-top: 72px;
+  margin-bottom: 72px;
+
+  @include respond-to(mobile-large) {
+    margin-top: $component-margin;
+    padding-left: $size-padding;
+    padding-right: $size-padding;
+  }
+
+  &.with-dotted-accents {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    @include respond-to(mobile-large) {
+      margin-top: $component-margin;
+    }
+
+    .img-column {
+      flex-basis: 40%;
+
+      img {
+        max-height: 620px;
+      }
+    }
+  }
+
+  &:not(.with-dotted-accents) {
+    .dotted-accent {
+      display: none;
+    }
+  }
+
+  &:not(.with-icon-accent) {
+    .icon-accent {
+      display: none;
+    }
+  }
+
+  &.bordered {
+    .img-column img {
+      border-radius: 0;
+      border: 1px solid var(--border-color);
+    }
+  }
+
+  .hero-row {
+    display: flex;
+    align-items: flex-start;
+
+    @include respond-to(mobile-large) {
+      flex-direction: column;
+    }
+  }
+
+  .content-column {
+    position: relative;
+    flex-basis: 45%;
+    max-width: 564px;
+
+    @include respond-to(mobile-large) {
+      flex-basis: 100%;
+      max-width: 100%;
+      margin-right: 160px;
+      margin-bottom: 2rem;
+    }
+
+    @include respond-to(mobile-horizontal) {
+      margin-right: 0;
+    }
+
+    .rich-content {
+      opacity: 0.85;
+    }
+  }
+
+  .img-column {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: auto;
+    flex-basis: 50%;
+    padding-left: $size-padding;
+
+    @include respond-to(mobile-large) {
+      margin-right: auto;
+      padding-left: 0;
+    }
+
+    .img-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      max-height: 445px;
+      object-fit: cover;
+      border-radius: var(--roundness);
+      box-shadow: 0 10px 22px rgb(0 0 0 / 10%);
+    }
+  }
+
+  .icon-accent {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 1rem);
+    z-index: 2;
+
+    @include respond-to(mobile-horizontal) {
+      display: none;
+    }
+  }
+
+  .dotted-accent {
+    position: absolute;
+    z-index: 2;
+
+    &-top {
+      top: -70px;
+      right: -70px;
+    }
+
+    &-bottom {
+      bottom: -70px;
+      left: -70px;
+    }
+  }
+}
+
+.site-financial .hero-banner {
+  .content-column {
+    .title,
+    h1,
+    h2,
+    h3 {
+      text-transform: uppercase;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: 0.01em;
+    }
+  }
+}

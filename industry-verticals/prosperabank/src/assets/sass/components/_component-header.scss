@@ -1,0 +1,82 @@
+@import 'src/assets/sass/abstracts/vars';
+
+.header {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-body);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  @include respond-to(mobile-large) {
+    padding: 0.75rem $size-padding;
+  }
+
+  .rich-text,
+  .navigation {
+    padding: 0 !important;
+  }
+
+  .utility-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding-bottom: 0.55rem;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 0.6rem;
+
+    @include respond-to(mobile-large) {
+      display: none;
+    }
+
+    .utility-links {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+
+    .utility-link {
+      color: var(--text-body);
+      border: 0;
+
+      &:hover {
+        color: var(--text-accent);
+        text-decoration: none;
+      }
+    }
+
+    .utility-separator {
+      opacity: 0.45;
+    }
+  }
+
+  .main-row {
+    min-height: 56px;
+  }
+
+  img {
+    width: auto;
+    max-height: 46px;
+    object-fit: contain;
+  }
+}
+
+.site-financial .header {
+  .row {
+    align-items: center;
+  }
+
+  .col-auto {
+    padding-right: 2rem;
+  }
+
+  .col {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

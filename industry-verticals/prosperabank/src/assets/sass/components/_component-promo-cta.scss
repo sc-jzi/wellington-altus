@@ -1,0 +1,422 @@
+.site-financial {
+  --promo-cta-img-ratio: 3/2;
+  --promo-cta-text-opacity: 1;
+  --promo-cta-text-size: 1.25rem;
+}
+
+.site-services {
+  --promo-cta-img-ratio: 1/1;
+  --promo-cta-text-opacity: 0.65;
+  --promo-cta-text-size: 1rem;
+}
+
+.promo-cta {
+  background-color: var(--bg-main-alt);
+  padding-top: $component-margin * 2;
+  padding-bottom: $component-margin * 2;
+
+  @include respond-to(mobile-large) {
+    padding-left: $size-padding;
+    padding-right: $size-padding;
+  }
+
+  &.with-dotted-accents {
+    .image-wrapper {
+      margin: 3.5rem;
+
+      .dotted-accent {
+        position: absolute;
+        z-index: 2;
+
+        &-top {
+          top: -70px;
+          left: -70px;
+        }
+
+        &-bottom {
+          bottom: -70px;
+          right: -70px;
+        }
+      }
+    }
+
+    &.reverse {
+      .dotted-accent {
+        &-top {
+          right: -70px;
+          left: unset;
+        }
+
+        &-bottom {
+          left: -70px;
+          right: unset;
+        }
+      }
+    }
+  }
+
+  &:not(.with-dotted-accents) {
+    .dotted-accent {
+      display: none;
+    }
+  }
+
+  &.bordered {
+    .image-wrapper img {
+      border-radius: 0;
+      border: 1px solid var(--border-color);
+    }
+  }
+
+  .main-content {
+    --bs-gutter-x: 8rem;
+    --bs-gutter-y: 3rem;
+  }
+
+  .text-content {
+    opacity: var(--promo-cta-text-opacity);
+  }
+
+  .promo-cta-text {
+    font-size: var(--promo-cta-text-size);
+  }
+
+  .image-wrapper {
+    position: relative;
+
+    img {
+      aspect-ratio: var(--promo-cta-img-ratio);
+      width: 100%;
+      object-fit: cover;
+      border-radius: var(--roundness);
+      overflow: hidden;
+    }
+  }
+
+  &.no-background,
+  .page-background .background-content & {
+    background-color: $bg-transparent !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: $component-margin;
+    margin-bottom: $component-margin;
+  }
+
+  &.with-background-image {
+    position: relative !important;
+    width: 100% !important;
+    background-color: #034c81 !important; // LMCU-style deep blue background - MUST be preserved
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    
+    // Override any default promo-cta styles
+    background-color: #034c81 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    .promo-cta-background-wrapper {
+      width: 100% !important;
+      min-height: 600px !important;
+
+      @include media-breakpoint-up(lg) {
+        min-height: 700px !important;
+      }
+
+      @include media-breakpoint-up(xl) {
+        min-height: 800px !important;
+      }
+    }
+
+    // Text Column - Left Side - MUST be preserved
+    .promo-cta-text-column {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 4rem 2rem !important;
+      min-height: 500px !important;
+      background-color: transparent !important;
+
+      @include media-breakpoint-up(md) {
+        padding: 5rem 3rem !important;
+        min-height: 600px !important;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 6rem 4rem !important;
+        min-height: 700px !important;
+      }
+
+      @include media-breakpoint-up(xl) {
+        padding: 8rem 6rem !important;
+        min-height: 800px !important;
+      }
+    }
+
+    .promo-cta-text-content {
+      max-width: 600px !important;
+      width: 100% !important;
+    }
+
+    // Eyebrow text - MUST be preserved
+    .promo-cta-eyebrow {
+      font-family: 'Lato', 'Source Sans 3', Helvetica, Arial, sans-serif !important;
+      font-size: 0.875rem !important;
+      font-weight: 600 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.1em !important;
+      color: rgba(255, 255, 255, 0.8) !important;
+      margin-bottom: 1rem !important;
+      display: block !important;
+    }
+
+    // Main heading - large, bold, white - MUST be preserved
+    .promo-cta-heading {
+      font-family: 'Lato', 'Source Sans 3', Helvetica, Arial, sans-serif !important;
+      font-size: 2.5rem !important;
+      font-weight: 700 !important;
+      line-height: 1.1 !important;
+      color: #ffffff !important;
+      margin-bottom: 1.5rem !important;
+      letter-spacing: -0.02em !important;
+
+      @include media-breakpoint-up(md) {
+        font-size: 3rem !important;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 3.5rem !important;
+        margin-bottom: 2rem !important;
+      }
+
+      @include media-breakpoint-up(xl) {
+        font-size: 4rem !important;
+      }
+    }
+
+    // Subtitle - MUST be preserved
+    .promo-cta-subtitle {
+      font-family: 'Lato', 'Source Sans 3', Helvetica, Arial, sans-serif !important;
+      font-size: 1.125rem !important;
+      font-weight: 400 !important;
+      line-height: 1.6 !important;
+      color: #ffffff !important;
+      margin-bottom: 1.5rem !important;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 1.25rem !important;
+        margin-bottom: 2rem !important;
+      }
+    }
+
+    // Body text - MUST be preserved
+    .promo-cta-body {
+      font-family: 'Lato', 'Source Sans 3', Helvetica, Arial, sans-serif !important;
+      font-size: 1.125rem !important;
+      font-weight: 400 !important;
+      line-height: 1.7 !important;
+      color: #ffffff !important;
+      margin-bottom: 2.5rem !important;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 1.25rem !important;
+        margin-bottom: 3rem !important;
+      }
+
+      p {
+        color: #ffffff !important;
+        margin-bottom: 1rem !important;
+
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+
+      strong,
+      b {
+        color: #ffffff !important;
+        font-weight: 600 !important;
+      }
+    }
+
+    // CTA Buttons - MUST be preserved
+    .promo-cta-actions {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 1rem !important;
+      margin-top: 2rem !important;
+
+      @include media-breakpoint-up(lg) {
+        margin-top: 2.5rem !important;
+      }
+    }
+
+    // Image Column - Right Side - MUST be preserved
+    .promo-cta-image-column {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      position: relative !important;
+      padding: 2rem !important;
+      min-height: 400px !important;
+      background-color: transparent !important;
+
+      @include media-breakpoint-up(md) {
+        padding: 3rem !important;
+        min-height: 500px !important;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 4rem !important;
+        min-height: 700px !important;
+      }
+
+      @include media-breakpoint-up(xl) {
+        padding: 5rem !important;
+        min-height: 800px !important;
+      }
+    }
+
+    .promo-cta-image-wrapper {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 600px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
+    .promo-cta-image {
+      position: relative !important;
+      z-index: 2 !important;
+      width: 100% !important;
+      height: auto !important;
+      object-fit: cover !important;
+      border: none !important;
+      border-radius: 0 !important;
+      aspect-ratio: auto !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      box-shadow: none !important;
+
+      @include media-breakpoint-up(md) {
+        max-width: 100% !important;
+        max-height: 100% !important;
+      }
+
+      @include media-breakpoint-up(lg) {
+        max-width: 100% !important;
+        max-height: 100% !important;
+      }
+    }
+
+    // Outline button with white border matching LMCU style - MUST be preserved
+    .button-outline-white {
+      display: inline-block !important;
+      padding: 0.875rem 2rem !important;
+      font-family: 'Lato', 'Source Sans 3', Helvetica, Arial, sans-serif !important;
+      font-size: 1rem !important;
+      font-weight: 500 !important;
+      color: #ffffff !important;
+      background-color: transparent !important;
+      border: 2px solid #ffffff !important;
+      border-radius: 0.375rem !important;
+      text-decoration: none !important;
+      transition: all 0.3s ease-in-out !important;
+      cursor: pointer !important;
+      white-space: nowrap !important;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        color: #ffffff !important;
+        text-decoration: none !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+      }
+
+      &:focus {
+        outline: 2px solid #ffffff !important;
+        outline-offset: 2px !important;
+      }
+
+      &:active {
+        transform: translateY(0) !important;
+      }
+    }
+
+    // Responsive adjustments - MUST be preserved
+    @include media-breakpoint-down(lg) {
+      .promo-cta-text-column {
+        text-align: center !important;
+      }
+
+      .promo-cta-actions {
+        justify-content: center !important;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .promo-cta-heading {
+        font-size: 2rem !important;
+      }
+
+      .promo-cta-image-column {
+        min-height: 300px !important;
+      }
+
+      .promo-cta-image {
+        max-width: 350px !important;
+        max-height: 350px !important;
+      }
+    }
+
+    // Final override to ensure styles are preserved - highest specificity
+    // This ensures the with-background-image variant styles take precedence
+    &.with-background-image.with-background-image {
+      background-color: #034c81 !important;
+      
+      .promo-cta-text-column,
+      .promo-cta-image-column {
+        background-color: transparent !important;
+      }
+      
+      .promo-cta-heading,
+      .promo-cta-subtitle,
+      .promo-cta-body,
+      .promo-cta-body p,
+      .promo-cta-body strong,
+      .promo-cta-body b {
+        color: #ffffff !important;
+      }
+    }
+  }
+
+  &.with-placeholder-column {
+    .image-wrapper {
+      margin: 0;
+    }
+
+    .promo-cta-placeholder {
+      margin-right: -42%;
+      z-index: 3;
+
+      &-inner {
+        border: 1px solid var(--border-color);
+        background-color: var(--bg-body);
+        padding: 2rem 3rem;
+      }
+
+      .styled-list ol {
+        margin-bottom: 0;
+      }
+    }
+
+    .dotted-accent {
+      left: -141px !important;
+      right: unset;
+    }
+  }
+}

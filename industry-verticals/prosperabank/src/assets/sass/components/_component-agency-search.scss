@@ -1,0 +1,464 @@
+.agency-search {
+  width: 100%;
+  min-height: 100vh;
+
+  &-header {
+    background-color: #002c5f; // Nationwide dark blue
+    color: #ffffff;
+    padding: 2rem 0;
+    margin-bottom: 0;
+
+    h1 {
+      color: #ffffff;
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+
+  &-content {
+    background-color: #003d7a; // Slightly lighter blue
+    padding: 2rem 0;
+  }
+
+  &-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+    button {
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      &.active {
+        color: #ffffff;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          right: 0;
+          height: 2px;
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+
+  &-form {
+    background-color: #003d7a;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+
+  &-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: end;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  &-form-row-secondary {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  }
+
+  &-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    label {
+      color: #ffffff;
+      font-size: 0.9rem;
+      font-weight: 500;
+      height: 2.5rem; // Fixed height to accommodate longest label (2 lines)
+      display: flex;
+      align-items: flex-end; // Align label text to bottom of label area
+      line-height: 1.2;
+    }
+
+    input,
+    select {
+      padding: 0.75rem 1rem;
+      padding-left: 2.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      background-color: #ffffff;
+      font-size: 1rem;
+      color: #333;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+        border-color: #0073e6;
+        box-shadow: 0 0 0 3px rgba(0, 115, 230, 0.1);
+      }
+
+      &::placeholder {
+        color: #999;
+      }
+    }
+
+    select {
+      padding-left: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  &-input-wrapper {
+    position: relative;
+    width: 100%;
+
+    svg {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #666;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    input {
+      padding-left: 2.5rem;
+    }
+  }
+
+  &-field-autocomplete {
+    position: relative;
+  }
+
+  &-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    margin-top: -1px; // Overlap with input border
+
+    // Custom scrollbar
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+
+      &:hover {
+        background: #555;
+      }
+    }
+  }
+
+  &-suggestion {
+    padding: 0.75rem 1rem;
+    padding-left: 2.5rem; // Match input padding
+    cursor: pointer;
+    color: #333;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+
+    &:hover,
+    &.selected {
+      background-color: #f0f7ff;
+      color: #002c5f;
+    }
+
+    &:first-child {
+      border-top: 1px solid #e0e0e0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 4px 4px;
+    }
+  }
+
+  &-use-location {
+    background: transparent;
+    border: none;
+    color: #0073e6;
+    font-size: 0.875rem;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0.25rem 0;
+    margin-left: 0;
+
+    &:hover {
+      color: #005bb5;
+    }
+  }
+
+  &-button-wrapper {
+    margin-left: auto;
+
+    @media (max-width: 992px) {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  &-button {
+    background-color: #0073e6; // Nationwide blue
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: #005bb5;
+    }
+
+    &:active {
+      background-color: #004494;
+    }
+  }
+
+  &-results {
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &-results-container {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    min-height: 600px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+  }
+
+  &-list {
+    padding: 1.5rem;
+    overflow-y: auto;
+    max-height: 600px;
+    border-right: 1px solid #e0e0e0;
+
+    @media (max-width: 992px) {
+      border-right: none;
+      border-bottom: 1px solid #e0e0e0;
+      max-height: 400px;
+    }
+  }
+
+  &-results-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  &-no-results {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #666;
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  &-map {
+    position: relative;
+    min-height: 600px;
+    background-color: #f5f5f5;
+
+    @media (max-width: 992px) {
+      min-height: 400px;
+    }
+  }
+}
+
+.agency-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.agency-item {
+  padding: 1.25rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+
+  &:hover {
+    border-color: #0073e6;
+    box-shadow: 0 2px 8px rgba(0, 115, 230, 0.15);
+  }
+
+  &.selected {
+    border-color: #002c5f;
+    background-color: #f0f7ff;
+    box-shadow: 0 2px 8px rgba(0, 44, 95, 0.2);
+  }
+
+  &-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #002c5f;
+    margin: 0 0 0.5rem 0;
+  }
+
+  &-address {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0.25rem 0;
+    line-height: 1.5;
+  }
+
+  &-phone {
+    color: #0073e6;
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+    font-weight: 500;
+  }
+
+  &-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+}
+
+.agency-product-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: #e8f4fd;
+  color: #002c5f;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+// Map styles
+.agency-map-container {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+
+  @media (max-width: 992px) {
+    min-height: 400px;
+  }
+
+  // Leaflet map container
+  :global(.leaflet-container) {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.agency-map-empty,
+.agency-map-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 600px;
+  background-color: #f5f5f5;
+  color: #666;
+  font-size: 1rem;
+
+  @media (max-width: 992px) {
+    min-height: 400px;
+  }
+}
+
+// Custom marker styles
+:global(.custom-div-icon) {
+  background: transparent !important;
+  border: none !important;
+}
+
+:global(.custom-marker) {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &.selected {
+    filter: drop-shadow(0 0 8px rgba(0, 44, 95, 0.6));
+  }
+}
+
+:global(.agency-map-popup) {
+  h4 {
+    margin: 0 0 0.5rem 0;
+    color: #002c5f;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0.25rem 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  a {
+    color: #0073e6;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

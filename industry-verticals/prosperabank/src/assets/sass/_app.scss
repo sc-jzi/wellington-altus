@@ -1,0 +1,190 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 0;
+  height: auto !important;
+  font-size: 16px; // Base font size for rem calculations
+}
+
+body {
+  @include opensans-font-stack;
+
+  position: relative;
+  overflow: auto;
+  overflow-x: hidden;
+  color: var(--text-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  background: var(--bg-body);
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+  height: auto !important;
+  font-family: var(--font-family, 'Inter', 'Open Sans', Helvetica, Arial, sans-serif);
+
+  &.on-page-editor {
+    background: $page-bg-editor !important;
+  }
+}
+
+main {
+  overflow: hidden;
+}
+
+a {
+  color: var(--text-body);
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--text-accent);
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: 2px solid var(--text-accent);
+    outline-offset: 2px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-display, 'Barlow Condensed', 'Inter', Helvetica, Arial, sans-serif);
+  color: var(--text-body);
+  line-height: 1.05;
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+}
+
+h2 {
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+h3 {
+  font-size: clamp(1.6rem, 2.4vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h4 {
+  font-size: 1.5rem; // ~24px
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+h5 {
+  font-size: 1.25rem; // ~20px
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+h6 {
+  font-size: 1rem; // ~16px
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+// Improved typography for better readability
+strong,
+b {
+  font-weight: 600;
+  color: var(--text-accent);
+}
+
+// Professional spacing and layout improvements
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+// Clean, modern button base styles
+button,
+.button {
+  font-family: var(--font-family, 'Inter', sans-serif);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  
+  &:focus {
+    outline: 2px solid var(--text-accent);
+    outline-offset: 2px;
+  }
+}
+
+// Improved form elements
+input,
+textarea,
+select {
+  font-family: var(--font-family, 'Inter', sans-serif);
+  font-size: 1rem;
+  color: var(--text-body);
+  line-height: 1.5;
+  
+  &:focus {
+    outline: 2px solid var(--text-accent);
+    outline-offset: 2px;
+  }
+}
+
+.xa-variable {
+  border: 0;
+  padding: 1px;
+  margin: 0;
+  background-color: #ebebe4;
+  color: #545454;
+  user-select: none;
+  pointer-events: none;
+}
+
+// Navigation Bar fix
+/* stylelint-disable-next-line selector-id-pattern */
+#breadcrumbMenuSubcontrol_context_menu * {
+  box-sizing: initial;
+}
+
+// End navigation bar fix
+.menu-mobile-navigate {
+  display: none;
+}
+
+#header,
+#content,
+#footer,
+.sc-jss-empty-placeholder {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.sc-jss-placeholder-error {
+  background: #f00;
+  outline: 5px solid #e36565;
+  padding: 10px;
+  color: #fff;
+  max-width: 500px;
+}

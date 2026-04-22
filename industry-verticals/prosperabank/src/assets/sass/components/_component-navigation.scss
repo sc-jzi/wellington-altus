@@ -1,0 +1,153 @@
+@import 'src/assets/sass/abstracts/mixins';
+@import 'src/assets/sass/abstracts/vars';
+
+.navigation {
+  position: relative;
+
+  .button-nav-item a {
+    @extend .button;
+    @extend .button-main;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  .level0,
+  .level1 {
+    &:not(.button-nav-item) {
+      > .navigation-title > a {
+        font-size: $navigation-font-basic;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  li {
+    &.submenu {
+      margin-bottom: 0;
+    }
+
+    > .navigation-title {
+      > a {
+        text-decoration: none;
+        // Ensure cursor pointer is applied via CSS, not inline styles to prevent hydration issues
+        cursor: pointer;
+      }
+    }
+
+    > ul a {
+      font-size: $navigation-font-basic-submenu;
+      cursor: pointer;
+    }
+  }
+  
+  // Prevent hydration mismatch by ensuring consistent cursor styling
+  .navigation-title a,
+  .navigation-title a[style*="cursor"] {
+    cursor: pointer !important;
+  }
+
+  .submenu > ul {
+    padding-left: 10px;
+  }
+
+  &.navigation-centered {
+    .component-content ul li.level1:not(.button-nav-item) > .navigation-title > a {
+      font-weight: normal;
+    }
+
+    @media (width > 992px) {
+      > .menu-mobile-navigate-wrapper {
+        width: 100%;
+
+        > .component-content {
+          width: 100%;
+        }
+      }
+
+      li.level1.item0.first,
+      li.button-nav-item {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.site-financial {
+  .navigation {
+    .search-input-container {
+      position: absolute;
+      top: calc(100% + 0.75rem);
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      background: var(--bg-body);
+      z-index: 20;
+      box-shadow: 0 10px 24px rgb(0 0 0 / 10%);
+      padding: 1rem $size-padding;
+
+      @include respond-to(mobile-large) {
+        top: calc(100% + 0.5rem);
+        padding: 0.75rem $size-padding;
+      }
+    }
+
+    .nav-search-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+
+      .search-label-button {
+        background: transparent;
+        border: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--text-body);
+        padding: 0;
+
+        &:hover {
+          color: var(--text-accent);
+        }
+      }
+    }
+
+    .level1:not(.button-nav-item) > .navigation-title > a {
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      font-size: 0.95rem;
+      padding: 0.65rem 0.85rem;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s ease, border-color 0.2s ease;
+
+      &:hover {
+        color: var(--text-accent);
+        border-bottom-color: var(--text-accent);
+      }
+    }
+
+    .submenu > ul {
+      border-top: 3px solid var(--text-accent);
+      box-shadow: 0 12px 24px rgb(0 0 0 / 10%);
+      background: #fff;
+      padding: 0.5rem 0;
+    }
+
+    .rel-level2 > .navigation-title > a {
+      font-size: 0.9rem;
+      text-transform: none;
+      font-weight: 500;
+      padding: 0.35rem 0.5rem;
+    }
+  }
+}
+
+@import 'src/assets/sass/components/navigation/';
