@@ -1,0 +1,377 @@
+// Wealth management marketing header (The Wong Group / Wellington-Altus)
+.wealth-management-header {
+  --wm-header-bg: #333c44;
+  --wm-header-fg: #fff;
+  --wm-header-muted: #c8d0d6;
+  --wm-util-bg: #4a5562;
+  --wm-util-bg-hover: #5c6773;
+  --wm-dropdown-bg: #fff;
+  --wm-dropdown-fg: #333c44;
+  --wm-hover-accent: #d4c4a8;
+
+  position: sticky;
+  top: 0;
+  z-index: 1040;
+  width: 100%;
+  background: var(--wm-header-bg);
+  color: var(--wm-header-fg);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 100%;
+    min-height: 5.5rem;
+    padding: 0.75rem clamp(1rem, 3vw, 2.5rem);
+  }
+
+  &__logos {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  &__logo-link,
+  &__logo-wrap {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+  }
+
+  &__logo-img {
+    display: block;
+    width: auto;
+    max-height: 4.5rem;
+    object-fit: contain;
+  }
+
+  &__desktop {
+    display: none;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1;
+    justify-content: flex-end;
+    min-width: 0;
+
+    @media (width >= 1024px) {
+      display: flex;
+    }
+  }
+
+  &__nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.35rem 1.35rem;
+  }
+
+  &__nav-item {
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    &--has-children:hover > .wealth-management-header__link,
+    &--has-children:focus-within > .wealth-management-header__link {
+      color: var(--wm-hover-accent);
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--wm-header-fg);
+    white-space: nowrap;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--wm-hover-accent);
+      text-decoration: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--wm-hover-accent);
+      outline-offset: 3px;
+    }
+  }
+
+  &__caret {
+    font-size: 0.7em;
+    opacity: 0.9;
+  }
+
+  &__submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 12rem;
+    margin: 0;
+    padding: 0.35rem 0;
+    list-style: none;
+    background: var(--wm-dropdown-bg);
+    color: var(--wm-dropdown-fg);
+    border-radius: 2px;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 18%);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(4px);
+    transition:
+      opacity 0.15s ease,
+      transform 0.15s ease,
+      visibility 0.15s;
+
+    .wealth-management-header__nav-item--has-children:hover &,
+    .wealth-management-header__nav-item--has-children:focus-within & {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+
+  &__submenu-link {
+    display: block;
+    padding: 0.65rem 1.1rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    text-decoration: none;
+    color: var(--wm-dropdown-fg);
+
+    &:hover,
+    &:focus-visible {
+      background: rgb(0 0 0 / 5%);
+      color: var(--wm-dropdown-fg);
+      text-decoration: none;
+    }
+  }
+
+  &__utils {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    flex-shrink: 0;
+  }
+
+  &__icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.65rem;
+    height: 2.65rem;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    background: var(--wm-util-bg);
+    color: var(--wm-header-fg);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s ease;
+
+    &:hover {
+      background: var(--wm-util-bg-hover);
+      color: var(--wm-header-fg);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--wm-hover-accent);
+      outline-offset: 2px;
+    }
+  }
+
+  &__icon-btn-icon {
+    font-size: 1.05rem;
+  }
+
+  &__user-lock {
+    width: 1.15rem;
+    height: 1.15rem;
+  }
+
+  &__mobile-tools {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    @media (width >= 1024px) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.65rem;
+    height: 2.65rem;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    background: var(--wm-util-bg);
+    color: var(--wm-header-fg);
+    cursor: pointer;
+
+    &:hover {
+      background: var(--wm-util-bg-hover);
+    }
+
+    .fa-times {
+      display: none;
+    }
+
+    &[aria-expanded='true'] {
+      .fa-bars {
+        display: none;
+      }
+
+      .fa-times {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__mobile-panel {
+    position: fixed;
+    inset: 0;
+    top: 5.5rem;
+    background: var(--wm-header-bg);
+    padding: 1rem 1.25rem 2rem;
+    overflow-y: auto;
+    z-index: 1039;
+
+    &[hidden] {
+      display: none;
+    }
+  }
+
+  &__mobile-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__mobile-nav-item {
+    border-bottom: 1px solid rgb(255 255 255 / 12%);
+  }
+
+  &__mobile-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.9rem 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--wm-header-fg);
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+
+    &:hover {
+      color: var(--wm-hover-accent);
+    }
+  }
+
+  &__mobile-children {
+    margin: 0;
+    padding: 0 0 0.75rem 0.75rem;
+    list-style: none;
+  }
+
+  &__mobile-child-link {
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--wm-header-muted);
+
+    &:hover {
+      color: var(--wm-header-fg);
+    }
+  }
+
+  &__search-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1050;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15vh 1rem 2rem;
+    background: rgb(0 0 0 / 55%);
+
+    &[hidden] {
+      display: none;
+    }
+  }
+
+  &__search-dialog {
+    width: min(36rem, 100%);
+    background: var(--wm-dropdown-bg);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 16px 48px rgb(0 0 0 / 35%);
+  }
+
+  &__search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__search-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  &__search-input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.65rem 0.75rem;
+    font-size: 1.125rem;
+    border: 1px solid rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    color: var(--wm-dropdown-fg);
+  }
+
+  &__search-close {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 4px;
+    background: rgb(0 0 0 / 6%);
+    color: var(--wm-dropdown-fg);
+    cursor: pointer;
+
+    &:hover {
+      background: rgb(0 0 0 / 12%);
+    }
+  }
+}

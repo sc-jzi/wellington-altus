@@ -10,10 +10,10 @@ SharedFields:
 - ID: "ba78a3c0-7c60-40ba-8d42-6bf559d9ca72"
   Hint: Image
   Value: |
-    <image mediaid="{F3D1CCA5-5256-4710-92DE-407F7D8234FB}" alt="roofing" height="" width="" hspace="" vspace="" />
+    <Image src="https://jzi-wellington-altus.sitecoresandbox.cloud/api/public/content/2a445b21cde144f2be848fd8790db16b?v=3cffd9b8" dam-id="EUTEf1LtSkuJL2OGOM7zXw" width="2000" height="1200" alt="imgi_77_LuxuryLiving.jpg" dam-content-type="Image" thumbnailsrc="https://jzi-wellington-altus.sitecoresandbox.cloud/api/gateway/82845/thumbnail" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "7a75c295-fcd0-4b76-bc1f-fac0e9cf64fa"
+  Value: "7260d98d-caf0-4195-afc8-a88286af361d"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{321B71A6-169C-4A12-905A-0BF5F5CCD7E3}"
@@ -41,7 +41,7 @@ Languages:
         sitecore\johannes.zijlstra@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4d880296-0dac-46f4-a4e0-b64a18fe5e5a"
+      Value: "4b154ad2-bf85-420d-bef9-ff97812f0627"
     - ID: "ad84ce04-c8f0-485e-bf12-9b321c6ff2fb"
       Hint: Text
       Value: |
@@ -52,7 +52,7 @@ Languages:
         sitecore\johannes.zijlstra@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260422T162834Z
+      Value: 20260422T174810Z
 - Language: "fr-CA"
   Versions:
   - Version: 1

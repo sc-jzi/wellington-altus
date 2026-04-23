@@ -14,14 +14,14 @@ SharedFields:
 - ID: "ba2b872d-f67d-40dc-be41-6366b7030144"
   Hint: Thumbnail
   Value: |
-    <image mediaid="{3BCF790B-6F34-4BE9-B544-61BC4750B936}" alt="Design pattern that represents blockchain technology" height="" width="" hspace="" vspace="" />
+    <Image src="https://jzi-wellington-altus.sitecoresandbox.cloud/api/public/content/64cf150a364d4d308e381a19f732fb54?v=5713e1c2" dam-id="mPGEeNLhSr67FLVGnvXvTQ" width="550" height="309" alt="imgi_20_MI_Intranet_banner_template_Mar.jpg" dam-content-type="Image" thumbnailsrc="https://jzi-wellington-altus.sitecoresandbox.cloud/api/gateway/82831/thumbnail" />
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{53899451-F450-49D7-B100-E1714384E9AC}" />
+    <image mediaid="{3C466BEA-BB67-455C-8821-33731763A064}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "9df3b2f9-7163-43b1-a458-8fd49e1f100f"
+  Value: "0c9426d5-3e88-4ae6-8886-2b03475627de"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -44,58 +44,116 @@ SharedFields:
 Languages:
 - Language: en
   Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "90afe0c1-f67d-42aa-9186-7f3405a72c9b"
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Exploring the use of blockchain technology in banking
+    Value: "March Market Insights: There is no Bronze Medal"
   Versions:
   - Version: 2
     Fields:
     - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
       Hint: __Lock
-      Value: 
+      Value: <r />
     - ID: "03117268-f84f-4fd8-ad9e-5990b3a21fe6"
       Hint: Content
       Value: |
-        <p>Blockchain technology has emerged as a game-changer in the world of finance, offering unprecedented opportunities for innovation, efficiency, and security. In this blog post, we'll delve into the transformative potential of blockchain in banking, exploring its applications, benefits, and implications for the future of financial services.</p>
-        <p><strong>Understanding Blockchain Technology</strong></p>
-        <p>Blockchain is a decentralized, distributed ledger technology that enables secure and transparent record-keeping of transactions across a network of computers. Each block in the blockchain contains a cryptographic hash of the previous block, creating a chain of blocks that is immutable, tamper-proof, and verifiable by all participants.</p>
-        <p><strong>Applications of Blockchain in Banking</strong></p>
-        <p>Blockchain technology offers a wide range of applications for banking and financial services, including:</p>
-        <ul>
-            <li><strong>Payments and Remittances</strong>: Blockchain enables faster, cheaper, and more secure cross-border payments and remittances by eliminating intermediaries and reducing settlement times.</li>
-            <li><strong>Smart Contracts</strong>: Smart contracts are self-executing contracts with the terms of the agreement written directly into code. Blockchain-based smart contracts automate and enforce the terms of agreements, reducing the need for intermediaries and streamlining processes such as loan origination, trade finance, and supply chain management.</li>
-            <li><strong>Identity Verification</strong>: Blockchain-based identity verification solutions provide secure and decentralized methods for verifying and managing digital identities, enhancing security and reducing the risk of identity theft and fraud.</li>
-            <li><strong>Asset Tokenization</strong>: Asset tokenization involves converting real-world assets, such as real estate, stocks, and commodities, into digital tokens on a blockchain. This enables fractional ownership, increased liquidity, and more efficient trading of assets.</li>
-        </ul>
-        <p><strong>Benefits of Blockchain in Banking</strong></p>
-        <p>The adoption of blockchain technology in banking offers several benefits, including:</p>
-        <ul>
-            <li><strong>Increased Efficiency</strong>: Blockchain streamlines processes, reduces costs, and eliminates intermediaries, leading to faster transaction settlement and improved operational efficiency.</li>
-            <li><strong>Enhanced Security</strong>: The cryptographic features of blockchain technology ensure tamper-proof and secure record-keeping, protecting against fraud, manipulation, and unauthorized access.</li>
-            <li><strong>Improved Transparency</strong>: Blockchain provides a transparent and immutable record of transactions, enhancing trust and accountability among participants.</li>
-        </ul>
-        <p><strong>Challenges and Considerations</strong></p>
-        <p>Despite its potential benefits, the adoption of blockchain in banking also presents challenges and considerations, including regulatory compliance, interoperability, scalability, and privacy concerns. Banks must navigate these challenges effectively to realize the full potential of blockchain technology while mitigating associated risks.</p>
-        <p><strong>Looking Ahead: The Future of Blockchain in Banking</strong></p>
-        <p>As blockchain technology continues to evolve and mature, banks are increasingly exploring ways to integrate it into their existing systems and processes. By embracing innovation, collaborating with industry stakeholders, and prioritizing security and compliance, banks can leverage the transformative power of blockchain to drive innovation, enhance efficiency, and deliver value to customers.</p>
+        <p>&ldquo;There&rsquo;s only two cultures that are going to win in the next year. It&rsquo;s going to be us or China.&rdquo; The subtext of Palantir CEO Alex Karp&rsquo;s widely cited speech from late 2025 sounds like tech‑bro theatre until you reflect on it. In artificial intelligence, there is no bronze medal. There will be a hegemon and a runner‑up. Everyone else will be a client.</p>
+        <p>Markets are not pricing that reality. Investors still treat the AI build-out as marginal cloud spend or another overhyped software cycle. They debate whether Big Tech is &ldquo;exhausting its available capital&rdquo; or whether capex &ldquo;must mean revert,&rdquo; as if infrastructure were optional and competition courteous. They are using valuation models from the wrong century for the wrong game.</p>
+        <p>AI is not an app store. It is a weapon system&mdash;and the operating system of the next industrial era. The capital going into it is not a bubble. It is rearmament.</p>
+        <p><span>AI as weapon system, not app</span></p>
+        <p>Karp, the philosopher-CEO of Palantir, has finally said in public what many in Silicon Valley admit only in private: AI is not potentially a weapon system. It is inherently one. The same infrastructure that serves personalized ads can set targeting coordinates. The same model that writes high school essays can construct attack plans, design bioweapons, or pilot a drone swarm.</p>
+        <p>In that environment, restraint does not buy peace; it merely guarantees that the other side defines the red lines. The civilization that spends at industrial scale will not politely negotiate the future with the civilization that chose to save its cash and write risk memos.</p>
+        <p>Hence the numbers. Alphabet&rsquo;s capital expenditure plans for 2026 have surged into the US$180 billion range. Amazon is pointing to around US$200 billion in capex this year, explicitly tied to AI-driven data centres, in-house silicon, and logistics infrastructure. Meta is guiding to well over US$100 billion as it rips and replaces its server fleet for AI workloads. Add Microsoft&rsquo;s own infrastructure spree, and the Big Four are on track to spend in the mid-hundreds of billions on AI and cloud infrastructure in a single year.</p>
+        <p>Wall Street calls this &ldquo;undisciplined,&rdquo; &ldquo;bubble-like&rdquo; or, at best, &ldquo;capex heavy.&rdquo; It should call it what it is: a sovereignty project.</p>
+        <p><span>Wall Street has the story wrong</span></p>
+        <p>The U.S. is expanding at 4 per cent, powered by a capex boom and an explicit drive to rebuild the country&rsquo;s productive base. Yet the dominant narrative still treats this as a tired, late-cycle burst fated to end in recession and a weaker dollar. That&rsquo;s why money is piling into utilities and staples at 50-times earnings while AI and software are being sold off indiscriminately.</p>
+        <p>What investors have missed is the Trump-Bessent project: using productive capital, bank deregulation, and supply-side policy to deliver durable, non-inflationary growth. This is not a sugar high stimulus. It&rsquo;s an attempt to raise potential output and reset the economy&rsquo;s structure.</p>
+        <p>The verdict from positioning is telling: the rush into gold, the historic underweight in the dollar, the wholesale rejection of AI-linked equities&mdash;all express the same bet that U.S. President Donald Trump and U.S. Treasury Secretary Scott Bessent will fail. Markets are acting as if the only possible outcomes are inflation, crisis, or both.</p>
+        <p>This is what happens when the industry of stock market analysis, dominated intellectually by Democrats and Keynesians, keeps reaching for the same demandside playbook. AI hype and Trumpian turbulence have exhausted investors. But fatigue is not an investment framework. The real question is whether Wall Street can shed its reflexive Keynesianism long enough to see that this may be the opening act of a new supply-side era, not the end of one.</p>
+        <p>The two stories&mdash;the AI arms race and America&rsquo;s supply-side revival&mdash;are not separate. They are the same contest seen from different ends of the balance sheet. The rearmament of digital infrastructure and the reindustrialization of the U.S. economy are twin expressions of a single policy logic: power flows from productive capacity.</p>
+        <p>We are in the midst of a generational change in economic thought&mdash;away from Keynesian demand management, where growth is deemed inflationary, toward supply-side economics, where growth itself is the antidote to inflation. The goal is clear: to expand the real economy, lift potential output, sustain growth above 4 per cent, and grow out of the debt burden that demand-side policy left behind. Wall Street still insists this is a short-cycle blip. It is wrong.</p>
+        <p><span>Technology, power, and imposed values</span></p>
+        <p>Karp&rsquo;s underlying message is simple: technology is not neutral and never has been. The values of the builder get hard-coded into the stack. If America does not own the chips, fabrication plants, the models, the data centres, and the deployment rails, the values embedded in the next century&rsquo;s infrastructure will not be the Constitution and the Bill of Rights. They will be social-credit scoring, predictive policing, and frictionless censorship.</p>
+        <p>History offers a blunt reminder: technology does not negotiate with existing social orders; it overthrows them. Printing dissolved medieval community even as it created modern individuality. Railways rewired empires. Nuclear weapons forced a new concept of sovereignty. AI stands in that lineage, but with a twist: it collapses time. Models self-improve. Data compounding accelerates. The feedback loop between deployment and social consequences is far shorter than in the age of presses and railroads.</p>
+        <p>Once a civilization gets a multiyear head start, its products don&rsquo;t just bring norms, they become the water everyone else swims in. That is what Karp is trying to drag into the Overton Window when he paraphrases the political scientist Samuel Huntington&mdash;as Karp states: &ldquo;If we are not the ones controlling the violence, we will not be dictating the rule of law.&rdquo; AI will sit inside every modern weapon system, every intelligence workflow, every critical infrastructure control room. If the stack that executes those functions is designed by a regime that treats dissent as pathology and privacy as subversion, the &ldquo;rule of law&rdquo; will evolve to look very different from the one Americans think they are defending.</p>
+        <p><span>The prisoners&rsquo; dilemma in silicon</span></p>
+        <p>From the standpoint of a state, AI capex looks far more like aircraft carrier group procurement than like another cloud line item. No serious strategist asks whether an aircraft carrier is accretive to next quarter&rsquo;s earnings. You ask whether you still want blue-water power projection capabilities ten years from now. The answer to that question drives the budget.</p>
+        <p>Look at AI capex through a simple prisoners&rsquo;-dilemma lens and the trajectory becomes inevitable. Each hyperscaler, and each government, would in isolation prefer a world of moderate, coordinated investment. Profits stay comfortable; bondholders stay calm; no one has to double their capex budget; environmental, social, and governance (ESG) committees can sleep at night.</p>
+        <p>But as soon as one decisive player defects from that implicit truce&mdash;by choosing to weaponize AI at scale&mdash;the payoff matrix shifts. If you match the investment, your margins compress and your shareholders complain, but you stay in the game. If you hold the line while your rival defects and spends, you enjoy one or two pleasantly &ldquo;disciplined&rdquo; years&mdash;and then discover that your core product has been commoditized, your platform is a thin client on someone else&rsquo;s infrastructure, and your country&rsquo;s defence stack runs on foreign chips and foreign models.</p>
+        <p>In that world, &ldquo;prudence&rdquo; is not risk management; it is capitulation by another name. The Nash equilibrium of this game is massive, simultaneous over-investment relative to the old world&rsquo;s comfort levels. No one can afford to be the sole dove in a sky full of hawks. To be clear, the U.S. has to structurally adjust as it reanimates a policy framework last seen in the 1800s. But with the AI wave, firms must evolve quickly or die. We are in the midst of a capex supercycle&mdash;a pivot to supply-side economics that deregulates the economy where growth is no longer seen as inflationary. As the world adjusts, investors must follow. Yes, the Great Rotation has begun.</p>
+        <p><span>Wall Street&rsquo;s broken lens</span></p>
+        <p>In theory, markets are supposed to price the future. In practice, they misprice regime shifts because they try to squeeze them back inside old templates. That is exactly what is happening with AI. This year&rsquo;s spike in data-centre and chip spend has triggered &ldquo;AI bubble&rdquo; headlines and tech sell-offs, framed as the market &ldquo;waking up&rdquo; to over-investment.</p>
+        <p><span>Two habits are doing the damage</span></p>
+        <p>First, the post-quantitative easing (QE) era taught investors to treat capex as a problem. The perfect business floated above the physical world, outsourced its factories, and spent its free cash flow on buybacks. Heavy, long cycle investment was for dinosaurs. AI brings the physical back with a vengeance: land for server farms, high voltage transformers, bespoke fabrication plants, new transmission lines, specialized cooling, and skilled industrial labour. Investors who have spent a decade cheering every reduction in capital intensity are now being asked to applaud the most capital-intensive buildout since the interstate highway system.</p>
+        <p>Second, finance prefers ploys with reversible consequences. If a software redesign flops, you ship a patch. If a marketing campaign fails, you try again next quarter. AI infrastructure is different. Once you cede chip manufacturing to a rival bloc, once your competitors have trained frontier models on data you cannot replicate, and once your industrial base is optimized around their tools, there is no quick pivot back. The real-world consequences are measured in decades of lost productivity and diminished sovereignty.</p>
+        <p>So analysts keep asking whether AI &ldquo;will pay off&rdquo; fast enough. The more relevant question is: what is the cost of not making the investment at all? What is the present value of losing effective control over your financial plumbing, your critical infrastructure, your defence stack, and your cultural exports to a rival system that has no interest in your civil liberties? That is a number too large for a discounted cash flow model. A spreadsheet calibrated to last cycle&rsquo;s cloud story cannot price the terminal value of remaining a first rank civilization.</p>
+        <p><span>From FOMO to FOBO</span></p>
+        <p>At the corporate level, all this translates into an emotional regime change. The dominant market emotion of the last cycle was FOMO: fear of missing out on the next momentum trade. In this one, it is FOBO: fear of becoming obsolete. Boards are less worried about missing the next rally than about waking up in three years with a structurally higher cost base and an inferior product set because their competitors embedded AI and automation more aggressively.</p>
+        <p>FOBO turns AI-related capex into a textbook prisoners&rsquo; dilemma. On paper, each participating firm would prefer a measured, ROI-disciplined investment path. In practice, each knows its rivals can lever up, tap policybacked credit, and pursue an arms race in chips, data infrastructure, and AI-enabled process redesign. In the dilemma, the individual&rsquo;s incentive is to defect: overspend relative to &ldquo;fundamentals&rdquo; in order not to be the laggard if the technology pays off. Subsidies for semiconductor manufacturing, grants for AI research, accelerated depreciation for digital capex, and regulatory forbearance in testing new models all lower the private cost of aggressive investment and accelerate diffusion. From one angle, it looks like corporate profligacy. From another, it is an arms race in productive capacity.</p>
+        <p><span>Hamilton&rsquo;s &ldquo;national blessing&rdquo; returns</span></p>
+        <p>To understand the macro regime taking shape around this capex supercycle, it helps to listen to a historical voice. In a 1781 letter to Robert Morris, a key financier of the American Revolution, Alexander Hamilton, the first U.S. treasury secretary, wrote that &ldquo;a national debt, if it is not excessive, will be to us a national blessing.&rdquo; He was not indulging in proto-Keynesian sentimentality. He was making a hard-headed point about power: public credit, properly harnessed, could weld the young republic&rsquo;s elites to its productive future and finance the infrastructure that would make U.S. independence stick.</p>
+        <p>Two centuries on, that idea is back&mdash;updated for an era of AI, programmable money, and weaponized supply chains. Trump&rsquo;s macro regime is often described as an aberration from a rules-based, liberal order. It is more accurate to see it as a late digital return of Hamilton and Henry Clay, the 19th-century American statesman. Trump is not a glitch; he is a throwback.</p>
+        <p>Clay&rsquo;s American System married tariffs, infrastructure improvements, and a protected continental market to an explicitly developmental state. Hamilton used public credit and a national bank to consolidate wartime debts, align elite interests with the Union, and fund &ldquo;useful manufactures.&rdquo; Trump&rsquo;s version uses different pipes&mdash; trade wars, chip subsidies, reshoring tax credits, defence procurement, and digital regulation&mdash;but the heart of the system is recognizable.</p>
+        <p>For decades, the United States pursued the opposite approach. The Marshall Plan rebuilt Europe after the devastation of the Second World War and created markets for American exports, but also seeded formidable industrial competitors. China&rsquo;s entry into the World Trade Organization (WTO) in 2001 locked in permanent normal trade relations and gave Beijing structured access to Western markets, contributing to the &ldquo;China shock&rdquo; that displaced large numbers of U.S. manufacturing jobs in the 2000s. The unintended arc from 1947 to 2001 is now obvious: American policy success abroad fostered a production ecosystem that undercut production at home.</p>
+        <p>Against that backdrop, Trump&rsquo;s insistence on restoring American productive capacity and clawing back leverage from multilateral constraints looks less like an outburst and more like a belated correction. His macro regime asks a Hamiltonian question: what, exactly, does each marginal unit of public and private leverage underwrite?</p>
+        <p><span>Debt that builds, not floats</span></p>
+        <p>The fading regime treated public debt as something to be lamented in speeches even as it tolerated a vast build up of private leverage used primarily to inflate asset prices. Cheap money financed buybacks and speculative real estate, not bulldozers or machine tools. The state&rsquo;s balance sheet was deployed to socialize losses in crises; the private sector&rsquo;s balance sheet manufactured paper wealth. Debt, in practice, funded consumption, speculation, and the carrying costs of an unbalanced trading system.</p>
+        <p>The emerging regime flips that script. It does not pretend debt is going away. Instead, it asks Hamilton&rsquo;s question: what, precisely, does the marginal unit of leverage underwrite? Increasingly, the answer is concrete: fabrication plants, data centres, electricity grids, ports, refineries, rail hubs, defence manufacturing, and reshored industrial capacity across the interior of the country. Policy has been rewired around sovereign tools&mdash;fiscal guarantees, tax credits, directed credit, procurement mandates, regulatory nudges&mdash;that steer capital toward these sectors.</p>
+        <p>The real economy has begun to respond. U.S. manufacturing surveys have moved back into expansion, with new orders and production components both in growth territory for the first time in years. That is not a meme; it is a sign that the industrial pulse is picking up.</p>
+        <p><span>Warsh, AI, and supply-side monetarism</span></p>
+        <p>This is where Karp&rsquo;s logic intersects with Kevin Warsh&rsquo;s prospective tenure at the U.S. Federal Reserve. Warsh is often caricatured as a hawk. That misses the point. In recent remarks, he has described AI as &ldquo;the most productivity-enhancing wave of our lifetimes,&rdquo; a mindset that argues firms which move early will enjoy structurally higher margins and market share rather than a one-off efficiency pop.</p>
+        <p>The parallel Warsh draws is explicit: just as Alan Greenspan, the former U.S. Federal Reserve chair, ultimately trusted the 1990s IT spending wave to expand potential output beyond what staff models predicted, Warsh hints he will trust an AI-driven productivity boom over the instincts of a central bank culture trained to see every capex surge as a prelude to overheating.</p>
+        <p>A Warsh Federal Reserve operating in an AI capex supercycle is likely to practise something like supplyside monetarism. It will be more sceptical of ultra-easy money and financial engineering that keeps zombie firms alive while being more tolerant of both public and private borrowing when it clearly underwrites productive investment&mdash;even at the cost of near-term volatility in inflation and rates. The central bank&rsquo;s role becomes less about smoothing every business cycle and more about managing the system&rsquo;s aggregate balance sheet: keeping the cost of capital from being so low that it invites misallocation, or so high that it chokes off the rearmament of the supply side.</p>
+        <p>Hamilton, it bears recalling, conditioned his &ldquo;national blessing&rdquo; line on the debt &ldquo;not being excessive&rdquo; and defended the proper funding of existing obligations, not their indefinite expansion. Warsh&rsquo;s version is similar: use credit to build the future, not to disguise past mistakes.</p>
+        <p><span>Bitcoin inside the Hamiltonian tent</span></p>
+        <p>Oddly, Bitcoin now sits inside this same story. For a decade, it was the emblem of non-sovereign rebellion: an asset for those convinced that profligate governments would inevitably debase their currencies. It lived outside the perimeter, structurally opposed to the Hamiltonian project of state-anchored credit.</p>
+        <p>That is changing. As regulatory clarity has grown and institutional wrappers have proliferated, Bitcoin has been pulled into an architecture Hamilton would recognize: a network of custody, collateral, and balance sheets where digital claims underwrite real-world risk-taking.</p>
+        <p>The United States now explicitly positions itself as the intended nucleus of a global, dollar-centric, digital monetary system built on three pillars: an internetnative technology layer, a standardized legal perimeter for digital assets, and an infrastructure for &ldquo;agentic&rdquo; commerce&mdash;software agents, machines, and institutions transacting at AI speed.</p>
+        <p>In that framework, Bitcoin is no longer the whole story, but it is the apex asset and cultural anchor. It functions as a non-sovereign check and complement to public credit rather than a pure repudiation of it. The familiar &ldquo;Bitcoin is worth zero&rdquo; refrain looks less serious each cycle, as funding markets repeatedly crowd around the same long-term levels and each wave of volatility leaves behind a denser institutional infrastructure. The Hamiltonian question applies: is this institutionalized Bitcoin stack a blessing or a curse? The answer turns on whether it channels capital toward lower-friction payments, better collateral plumbing, and genuine innovation&mdash;or simply adds leverage to speculative narratives.</p>
+        <p><span>What investors should do</span></p>
+        <p>For investors, the conclusion is uncomfortable but unavoidable. We are no longer in a world where the right question is: &ldquo;Is there too much debt?&rdquo; The questions now are: &ldquo;What is that debt underwriting, and does it expand the country&rsquo;s productive frontier?&rdquo; and &ldquo;Whose stack are you living inside?&rdquo;</p>
+        <p><span>Practically, that means three shifts</span></p>
+        <p>First, treat AI capex as the backbone of a new industrial and geopolitical regime, not as a line item that &ldquo;must mean revert.&rdquo; The durable equity value is likely to accrue to owners of critical bottlenecks: proprietary silicon, scarce power-dense campuses, grid and transmission expansion, specialized memory and fibre, and software platforms that sit closest to mission-critical workflows rather than to consumer novelty.</p>
+        <p>Second, take the Great Rotation seriously. Capital is already bleeding, gradually but persistently, out of pure duration trades and into the productive economy trade: industrials, energy, infrastructure, transport, defence, and AI-enabled incumbents that move goods, electrons, and people. This is an industrial renaissance as much as it is a tech story. Portfolios should tilt toward domestic manufacturing, industrial automation, engineeringheavy firms, energy and power infrastructure, and the regional banks and credit platforms levered to Main Street capex rather than to financial engineering.</p>
+        <p>Third, update your macro template for a Warsh Federal Reserve in a Trumpian-Hamiltonian regime. Expect rate cuts geared to easing stress in housing, small-business credit, and regional banks, combined with a tougher stance on balance-sheet excess and central-bank mission creep. That mix is friendlier to duration in capital hungry, real-economy sectors than to the frothiest corners of speculative tech. It is also consistent with a pragmatic trade policy d&eacute;tente with China that formalizes spheres of influence rather than ending competition.</p>
+        <p>Hamilton&rsquo;s wager was that debt, used well, could be a national blessing. Trump has placed a 21st century version of that bet on AI, energy, and industrial rebuilding. Warsh looks ready to design a monetary regime around it. Karp has supplied the visceral framing: in AI, there is no bronze medal.</p>
+        <p>Investors now have to decide which side of the ledger they are on. Do they own the pipes, engines, and silicon of the rebuild, or just a handful of abstractions floating above it? AI capex is not a bubble. It is industrial rearmament&mdash;and the portfolios that win from here will be the ones that stop fighting the capex wave and start riding the industrial one.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260422T195007Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{1B3D21A1-3E75-49D0-AF21-C4B2DE228760}"
     - ID: "3e700dce-26eb-4bf0-990f-9d9fe555990d"
       Hint: Excerpt
-      Value: Jump into the transformative potential of blockchain technology in banking, exploring its applications and benefits in revolutionizing financial services. Join our journey to embrace innovation and drive positive change in the financial landscape.
+      Value: |
+        AI capex is America’s industrial rearmament
+        “There’s only two cultures that are going to win in the next year. It’s going to be us or China.” – Alex Karp, CEO of Palantir
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: Exploring the use of blockchain technology in banking
+      Value: "March Market Insights: There is no Bronze Medal"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johannes.zijlstra@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3d347962-6b20-4df2-9ac8-c54d754d21b3"
+      Value: "f0e18029-82f4-4351-8e53-5bcf2dc523bd"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johannes.zijlstra@sitecore.com
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 20240614T135535Z
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260422T200001Z
     - ID: "e81c4912-a4d2-4466-842c-02f0b2c9dc42"
       Hint: Title
-      Value: Exploring blockchain technology in banking
+      Value: "March Market Insights: There is no Bronze Medal"
 - Language: "fr-CA"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

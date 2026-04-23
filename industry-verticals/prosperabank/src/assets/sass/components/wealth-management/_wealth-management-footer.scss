@@ -1,0 +1,363 @@
+// Wealth management marketing footer (The Wong Group / Wellington-Altus)
+.wealth-management-footer {
+  --wm-footer-main-bg: #333c47;
+  --wm-footer-sub-bg: #54606e;
+  --wm-footer-fg: #fff;
+  --wm-footer-muted: #c8d8e8;
+  --wm-footer-button: #c5b38a;
+  --wm-footer-button-fg: #1a1f24;
+  --wm-footer-input-border: rgb(0 0 0 / 12%);
+
+  color: var(--wm-footer-fg);
+  width: 100%;
+
+  &__main {
+    background: var(--wm-footer-main-bg);
+    padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 3vw, 2.5rem);
+  }
+
+  &__inner {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(2rem, 4vw, 3rem);
+
+    @media (width >= 992px) {
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 1.25rem;
+    line-height: 0;
+
+    img {
+      max-width: 16rem;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  &__intro {
+    margin: 0 0 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--wm-footer-muted);
+    max-width: 36rem;
+  }
+
+  &__contact-list {
+    margin: 0 0 1.5rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__contact-item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--wm-footer-muted);
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        color: var(--wm-footer-fg);
+      }
+    }
+  }
+
+  &__contact-icon {
+    flex-shrink: 0;
+    width: 1.25rem;
+    margin-top: 0.15rem;
+    text-align: center;
+    color: var(--wm-footer-fg);
+    opacity: 0.95;
+  }
+
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-bottom: 1.75rem;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: rgb(255 255 255 / 12%);
+    color: var(--wm-footer-fg);
+    text-decoration: none;
+    transition: background 0.15s ease;
+
+    &:hover {
+      background: rgb(255 255 255 / 22%);
+      color: var(--wm-footer-fg);
+    }
+
+    .fa {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__awards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.25rem;
+  }
+
+  &__award {
+    display: block;
+    line-height: 0;
+
+    img {
+      display: block;
+      width: auto;
+      max-height: 5.5rem;
+      max-width: min(11rem, 100%);
+      object-fit: contain;
+    }
+
+    &--wide img {
+      max-height: 6.5rem;
+      max-width: min(14rem, 100%);
+    }
+  }
+
+  &__form-col {
+    min-width: 0;
+  }
+
+  &__form-title {
+    margin: 0 0 0.65rem;
+    font-family: var(--font-family-display, 'Barlow Condensed', Georgia, serif);
+    font-size: clamp(1.35rem, 2vw, 1.75rem);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1.15;
+    color: var(--wm-footer-fg);
+  }
+
+  &__form-sub {
+    margin: 0 0 1.35rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--wm-footer-muted);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media (width >= 576px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    min-width: 0;
+
+    &--full {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__label {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--wm-footer-fg);
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: 0.55rem 0.65rem;
+    font-size: 0.9375rem;
+    border: 1px solid var(--wm-footer-input-border);
+    border-radius: 2px;
+    background: #fff;
+    color: #1a1f24;
+
+    &:focus {
+      outline: 2px solid var(--wm-footer-button);
+      outline-offset: 1px;
+    }
+  }
+
+  &__textarea {
+    min-height: 6.5rem;
+    resize: vertical;
+  }
+
+  &__hp {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
+  &__submit-wrap {
+    @media (width >= 576px) {
+      max-width: 50%;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    background: var(--wm-footer-button);
+    color: var(--wm-footer-button-fg);
+    transition: filter 0.15s ease;
+
+    &:hover {
+      filter: brightness(1.05);
+    }
+
+    &:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+    }
+  }
+
+  &__sub {
+    background: var(--wm-footer-sub-bg);
+    padding: clamp(1.25rem, 3vw, 1.75rem) clamp(1rem, 3vw, 2.5rem);
+  }
+
+  &__sub-inner {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+
+  &__sub-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+
+    @media (width >= 768px) {
+      grid-template-columns: repeat(3, 1fr);
+      text-align: left;
+    }
+  }
+
+  &__sub-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.65rem;
+    min-width: 0;
+
+    @media (width >= 768px) {
+      align-items: flex-start;
+    }
+
+    &--legal {
+      @media (width >= 768px) {
+        text-align: right;
+        align-items: flex-end;
+      }
+    }
+  }
+
+  &__sub-img {
+    display: block;
+    line-height: 0;
+
+    img {
+      max-height: 3rem;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    &--ciro img {
+      max-height: 3.25rem;
+    }
+  }
+
+  &__sub-link {
+    font-size: 0.875rem;
+    color: var(--wm-footer-fg);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  &__copyright {
+    margin: 0;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: var(--wm-footer-muted);
+  }
+
+  &__legal {
+    margin: 0.35rem 0 0;
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    color: var(--wm-footer-muted);
+
+    a {
+      color: var(--wm-footer-fg);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__legal-sep {
+    margin: 0 0.35rem;
+    opacity: 0.6;
+  }
+}

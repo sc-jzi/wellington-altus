@@ -9,7 +9,7 @@ import {
 
 import Head from 'next/head';
 import client from 'lib/sitecore-client';
-import { useCallback, useRef, useState, useEffect, useMemo } from 'react';
+import { useCallback, useRef, useState, useEffect, useId, useMemo } from 'react';
 import React from 'react';
 import { Placeholder, RichText, NextImage, Link, Text, useSitecore, withDatasourceCheck, CdpHelper, Image as Image_8a80e63291fea86e0744df19113dc44bec187216 } from '@sitecore-content-sdk/nextjs';
 import PreviewSearchWidget from 'src/components/Search/PreviewSearch/PreviewSearch';
@@ -22,6 +22,7 @@ import * as FEAAS from '@sitecore-feaas/clientside/react';
 import nextConfig from 'next.config';
 import { pageView } from '@sitecore-cloudsdk/events/browser';
 import config from 'sitecore.config';
+import Link_a258c208ba01265ca0aa9c7abae745cc7141aa63 from 'next/link';
 import { useI18n } from 'next-localization';
 import { WidgetDataType, usePreviewSearch, widget, PageController } from '@sitecore-search/react';
 import { ArticleCard, Presence, PreviewSearch } from '@sitecore-search/ui';
@@ -31,7 +32,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import { CountUp } from 'components/NonSitecore/CountUp';
 import { DottedAccent } from 'components/NonSitecore/DottedAccent';
-import Link_a258c208ba01265ca0aa9c7abae745cc7141aa63 from 'next/link';
 import { FacebookIcon, FacebookShareButton, LinkedinIcon, LinkedinShareButton, TwitterIcon, TwitterShareButton } from 'react-share';
 import { ParallaxBanner, useParallax, Parallax } from 'react-scroll-parallax';
 import { ParallaxBackgroundImage } from 'components/NonSitecore/ParallaxBackgroundImage';
@@ -58,6 +58,7 @@ const importMap = [
       { name: 'useRef', value: useRef },
       { name: 'useState', value: useState },
       { name: 'useEffect', value: useEffect },
+      { name: 'useId', value: useId },
       { name: 'useMemo', value: useMemo },
       { name: 'default', value: React },
     ]
@@ -137,6 +138,12 @@ const importMap = [
     ]
   },
   {
+    module: 'next/link',
+    exports: [
+      { name: 'default', value: Link_a258c208ba01265ca0aa9c7abae745cc7141aa63 },
+    ]
+  },
+  {
     module: 'next-localization',
     exports: [
       { name: 'useI18n', value: useI18n },
@@ -197,12 +204,6 @@ const importMap = [
     module: 'components/NonSitecore/DottedAccent',
     exports: [
       { name: 'DottedAccent', value: DottedAccent },
-    ]
-  },
-  {
-    module: 'next/link',
-    exports: [
-      { name: 'default', value: Link_a258c208ba01265ca0aa9c7abae745cc7141aa63 },
     ]
   },
   {

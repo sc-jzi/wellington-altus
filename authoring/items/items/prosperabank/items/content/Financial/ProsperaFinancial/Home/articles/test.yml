@@ -4,19 +4,28 @@ Parent: "0b45c71d-61ae-44f3-9f7d-6c88185f0b15"
 Template: "f83ccefd-fc41-4a60-9882-8f7ea5cf41a8"
 Path: /sitecore/content/Financial/ProsperaFinancial/Home/articles/test
 SharedFields:
+- ID: "ad26114f-29dd-4ef9-b5bf-1d64d558872d"
+  Hint: BackgroundImage
+  Value: 
+- ID: "ba2b872d-f67d-40dc-be41-6366b7030144"
+  Hint: Thumbnail
+  Value: 
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
     <image mediaid="{C0C8724E-B06D-4732-9F52-D4193D7CC0B3}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "58cef6c9-a120-45f7-a179-3d3c62e8cce2"
 Languages:
 - Language: en
   Fields:
   - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
     Hint: __Unversioned revision
-    Value: "7aba7bd8-b71c-4684-a0f2-06592db1f630"
+    Value: "6a4b2619-25b7-4aea-956c-e58a768b4b24"
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: test
+    Value: Independent Advisor Solutions partners with J.P. Morgan Asset Management to launch new U.S. Active Equities MiBLOX
   Versions:
   - Version: 1
     Fields:
@@ -25,21 +34,21 @@ Languages:
       Value: 20260331T191354Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: teste
+      Value: Independent Advisor Solutions partners with J.P. Morgan Asset Management to launch new U.S. Active Equities MiBLOX
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
         sitecore\mark.fronczak@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b346c99a-2e2f-45eb-b7fb-6defc79a9744"
+      Value: "ae864aad-070f-4bcd-abf4-3db02096aebd"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\mark.fronczak@sitecore.com
+        sitecore\johannes.zijlstra@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260331T191455Z
+      Value: 20260422T200111Z
     - ID: "e81c4912-a4d2-4466-842c-02f0b2c9dc42"
       Hint: Title
-      Value: teste
+      Value: Independent Advisor Solutions partners with J.P. Morgan Asset Management to launch new U.S. Active Equities MiBLOX

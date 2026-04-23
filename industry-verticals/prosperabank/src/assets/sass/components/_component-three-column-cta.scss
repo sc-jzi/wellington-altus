@@ -17,8 +17,24 @@
 }
 
 .three-column-cta {
+  // Bootstrap .row is flex; columns default to min-width: auto, so long headings
+  // inflate the column and overlap neighbors. Allow columns to respect the grid width.
+  .row > [class*='col-'] {
+    min-width: 0;
+  }
+
   @include respond-to(mobile-large) {
     padding: 0 $size-padding;
+  }
+
+  h2 {
+    // Global h2 is clamp(2rem, 3.5vw, 3.5rem) — too large for ~33% width columns
+    font-size: clamp(1.125rem, 0.95rem + 0.85vw, 1.65rem);
+    font-weight: 800;
+    line-height: 1.12;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   img {

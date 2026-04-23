@@ -21,7 +21,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{097C1119-E5A5-4725-93B4-AAE32B8EEA6A}" />
+    <image mediaid="{C54D0EF3-4DC9-4287-B59C-E2B23770AF04}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
   Value: "97feb262-9279-4fdf-b73b-7a86c9018635"
@@ -44,9 +44,12 @@ SharedFields:
 Languages:
 - Language: en
   Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "d13d344e-8d6c-4cc4-bcdc-6c1017107c54"
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Empowering young adults
+    Value: "February Market Insights: Fortress America and the Colony Next Door"
   Versions:
   - Version: 1
     Fields:
@@ -73,6 +76,9 @@ Languages:
         </p>
         <p>
         <em><strong>Are you ready to take control of your financial future? Join us at PLAY! Finance and embark on a journey toward financial empowerment today!</strong></em></p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260422T200158Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{13D6CCE7-A6C3-4EE1-A1D9-8A8E34225ED7}"
@@ -81,13 +87,24 @@ Languages:
       Value: "Financial literacy is key to unlocking opportunities and achieving long-term goals. We've developed a comprehensive program designed specifically for young adults, providing them with the tools, resources, and knowledge they need to succeed."
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: Empowering young adults
+      Value: "February Market Insights: Fortress America and the Colony Next Door"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johannes.zijlstra@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0b378e4d-1083-42cb-9fcf-74656f4a2289"
+      Value: "72041968-1c57-4f84-89c5-f45b6452a6c5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johannes.zijlstra@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260422T200158Z
     - ID: "e81c4912-a4d2-4466-842c-02f0b2c9dc42"
       Hint: Title
-      Value: "Empowering young adults: Control of your financial future"
+      Value: "February Market Insights: Fortress America and the Colony Next Door"
 - Language: "fr-CA"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

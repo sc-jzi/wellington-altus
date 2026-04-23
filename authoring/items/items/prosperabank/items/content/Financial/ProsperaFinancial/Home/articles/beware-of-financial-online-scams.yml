@@ -14,14 +14,14 @@ SharedFields:
 - ID: "ba2b872d-f67d-40dc-be41-6366b7030144"
   Hint: Thumbnail
   Value: |
-    <image mediaid="{DC72FADF-5C01-44F2-97A8-F0121AB9D5B6}" alt="Online scams - computer screen with code" height="" width="" hspace="" vspace="" />
+    <Image src="https://jzi-wellington-altus.sitecoresandbox.cloud/api/public/content/83005b9c59ea490c805a741cf01a7e4a?v=833c689c" dam-id="YEMplCGMT4uZZbs7ilqXRQ" width="550" height="288" alt="imgi_19_WA-Featured-Image.png" dam-content-type="Image" thumbnailsrc="https://jzi-wellington-altus.sitecoresandbox.cloud/api/gateway/82830/thumbnail" />
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{511F4E7E-0D4A-4D12-8BD2-5D6595B9C2BC}" />
+    <image mediaid="{5165C5C5-FEB3-4411-9DEA-D97709F9E545}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "3ee9b91e-f23b-42ae-8334-03dd447cf1e4"
+  Value: "528f76fd-e3c9-43be-ae55-020747f5055b"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -52,58 +52,231 @@ SharedFields:
 Languages:
 - Language: en
   Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "45a01dbf-03d0-4a28-9f7e-fc1cae4bd1bb"
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Beware of financial online scams
+    Value: "Registered Education Savings Plan (RESP) 101: A Smarter Way to Save for Education"
   Versions:
   - Version: 1
     Fields:
     - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
       Hint: __Lock
-      Value: 
+      Value: <r />
     - ID: "03117268-f84f-4fd8-ad9e-5990b3a21fe6"
       Hint: Content
       Value: |
-        <p>In an increasingly digital world, the convenience of online financial transactions comes with a risk: the threat of scams and fraud. As technology advances, so do the tactics of cybercriminals, making it essential for individuals to stay vigilant and informed to protect their hard-earned money. Here are some common online financial scams to be aware of and tips on how to avoid falling victim to them.</p>
-        <p><strong>Phishing Scams</strong></p>
-        <p>Phishing scams involve fraudulent attempts to obtain sensitive information, such as usernames, passwords, and credit card details, by impersonating trusted entities. These scams often come in the form of deceptive emails, text messages, or websites that appear legitimate but are designed to trick individuals into disclosing their personal information.
-        </p>
-        <p style="margin-left: 40px;"><strong>Tip</strong>: Be cautious of unsolicited emails or messages requesting personal or financial information. Verify the legitimacy of the sender by contacting the organization directly through official channels, such as their website or customer service hotline.
-        </p>
-        <p><strong>Investment Scams</strong></p>
-        <p>Investment scams promise high returns with little to no risk, often targeting unsuspecting individuals looking to grow their wealth quickly. These scams may involve fraudulent schemes such as Ponzi schemes, pyramid schemes, or fake investment opportunities that promise unrealistic returns or guaranteed profits.
-        </p>
-        <p style="margin-left: 40px;"><strong>Tip</strong>: Exercise caution when approached with investment opportunities that sound too good to be true. Conduct thorough research and seek advice from reputable financial professionals before making any investment decisions.
-        </p>
-        <p><strong>Online Shopping Scams</strong></p>
-        <p>Online shopping scams involve fraudulent websites or sellers that offer counterfeit or non-existent products at attractive prices to lure in unsuspecting buyers. These scams may result in individuals paying for goods that they never receive or receiving inferior-quality products compared to what was advertised.
-        </p>
-        <p style="margin-left: 40px;"><strong>Tip</strong>: Only shop from reputable and trusted websites, and be wary of deals that seem too good to be true. Look for secure payment options and read reviews from other customers before making a purchase.
-        </p>
-        <p><strong>Romance Scams</strong></p>
-        <p>Romance scams involve individuals posing as potential romantic partners to establish trust and manipulate victims into sending them money or personal information. These scams often occur on social media platforms, dating websites, or online forums where cybercriminals target vulnerable individuals seeking companionship.
-        </p>
-        <p style="margin-left: 40px;"><strong>Tip</strong>: Be cautious when communicating with individuals online, especially if they request financial assistance or disclose personal information early in the relationship. Avoid sharing sensitive information with strangers and consider verifying their identity through other means before engaging further.
-        </p>
-        <p><strong>Conclusion</strong></p>
-        <p>Protecting yourself from financial online scams requires awareness, skepticism, and proactive measures to safeguard your personal and financial information. By staying informed and exercising caution when conducting online transactions, you can reduce the risk of falling victim to scams and enjoy a safer online experience.
-        </p>
-        <p>Remember, if something seems suspicious or too good to be true, it probably is. Stay vigilant, trust your instincts, and always prioritize your financial security.</p>
+        <div>
+        <div>
+        <div>
+        <div>
+        <p><span style="text-decoration: underline;">QUICK FACTS:</span></p>
+        <ul>
+            <li style="background: transparent; border: 0px; list-style-type: disc; list-style-image: initial;"><span>Lifetime Contribution Limit:&nbsp;</span>$50,000 lifetime contribution per beneficiary across all RESPs</li>
+            <li style="background: transparent; border: 0px; list-style-type: disc; list-style-image: initial;"><span>Annual Contribution Limit:&nbsp;</span>None; account can be front-loaded, but will reduce available CESG</li>
+            <li style="background: transparent; border: 0px; list-style-type: disc; list-style-image: initial;"><span>Lifetime CESG Limit:&nbsp;</span>$7,200 per beneficiary</li>
+            <li style="background: transparent; border: 0px; list-style-type: disc; list-style-image: initial;"><span>Maximum CLB:&nbsp;</span>$2,000 per eligible beneficiary</li>
+            <li style="background: transparent; border: 0px; list-style-type: disc; list-style-image: initial;">Contributions are not tax-deductible, but investments grow tax-deferred</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div>
+        <div>
+        <div>
+        <div>
+        <h2><span>What is a RESP?</span></h2>
+        <p>A RESP is a tax-deferred registered account that is intended to be used as a long-term savings tool to help Canadians save for higher education, either for themselves or their children.</p>
+        <h2><span>Setting Up a RESP</span></h2>
+        <p>While opening a RESP is straightforward, there are a few key items you will want to consider:</p>
+        <h3><span>1. Key Roles</span></h3>
+        <p>There are two key roles to understand when establishing a RESP: the subscriber and the beneficiary.</p>
+        <p>The subscriber is the individual who opens and manages the RESP, most commonly a parent or guardian, though a grandparent or other relative may also serve in this role. In some cases, a RESP may be established with joint subscribers, such as when both parents are named on the plan.</p>
+        <p>The beneficiary is the individual for whom the RESP is intended and who will use the funds for post-secondary education. Depending on the type of RESP, including individual, family, or group plans, there may be one or multiple beneficiaries associated with a single RESP account.</p>
+        <p><span>2. Choosing the Right Type of RESP</span></p>
+        <p>RESPs generally come in three formats:</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div>
+        <div>
+        <div>
+        <div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                    <p><span>Type</span></p>
+                    </td>
+                    <td>
+                    <p><span>Individual Plan</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <p><span>Best Suited For</span></p>
+                    </td>
+                    <td>
+                    <p>One child</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <p><span>Key Features to Consider</span></p>
+                    </td>
+                    <td>
+                    <p>Opened by anyone; flexible; no family relationship required</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div>
+        <div>
+        <div>
+        <div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                    <p><span>Type</span></p>
+                    </td>
+                    <td>
+                    <p><span>Family Plan</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <p><span>Best Suited For</span></p>
+                    </td>
+                    <td>
+                    <p>Multiple children</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <p><span>Key Features to Consider</span></p>
+                    </td>
+                    <td>
+                    <p>Beneficiaries must be related by blood or adoption; funds can be shared</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div>
+        <div>
+        <div>
+        <div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                    <p><span>Type</span></p>
+                    </td>
+                    <td>
+                    <p><span>Group Plan</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <p><span>Best Suited For</span></p>
+                    </td>
+                    <td>
+                    <p>Hands-off approach</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <p><span>Key Features to Consider</span></p>
+                    </td>
+                    <td>
+                    <p>Offered by scholarship dealers; pooled contributions; strict rules and fees</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div>
+        <div>
+        <div>
+        <div>
+        <p><span>3. Planning for the Unexpected</span></p>
+        <p>Depending on the specific terms of the RESP contract between the subscriber(s) and the financial institution, RESPs do not automatically continue in the event of a subscriber&rsquo;s death. To help protect your RESP planning, you may consider naming joint subscribers to the RESP and include specific RESP instructions in your estate planning documents. Without appropriate planning, a RESP may be collapsed, subject to taxation, and/or be required to repay government grants upon the death of a subscriber.</p>
+        <h2><span>Canada Education Savings Grant</span></h2>
+        <p>One of the most compelling benefits of using a RESP is the Canada Education Savings Grant (CESG). The CESG is a federal government program that can provide a grant equal to 20% of the first $2,500 contributed to a RESP each year, per child, up to and including the year the beneficiary turns 17. This results in a maximum annual grant of $500<span style="line-height: 0;">1</span>, with a lifetime CESG limit of $7,200 per beneficiary.</p>
+        <p>Additional CESG amounts may be available to families with lower &ldquo;adjusted family net income&rdquo;, providing enhanced government support to help make post-secondary education more accessible.</p>
+        <p><span>Canada Learning Bond</span></p>
+        <p>In addition to the CESG, low-income families may also benefit from the Canada Learning Bond (CLB), which provides further encouragement to save for post-secondary education. The CLB offers up to $2,000 per eligible beneficiary, comprised of an initial $500 payment in the first year the child qualifies, followed by annual payments of $100 for each additional year of eligibility until the year the child turns 15. Unlike the CESG, there is no requirement to make contributions to the RESP to benefit from the CLB. Employment and Social Development Canada (ESDC) also provide a one-time $25 deposit alongside the initial CLB payment to help offset the costs associated with opening a RESP.</p>
+        <h2><span>Withdrawing from Your RESP</span></h2>
+        <p>When it comes time to withdraw funds from a RESP to help pay for education, many subscribers wonder whether there is a &ldquo;best&rdquo; approach to maximizing the RESP value while minimizing tax implications.</p>
+        <p>Depending on the nature of the withdrawal, amounts received may be considered taxable or non-taxable. While a detailed discussion of RESP withdrawal strategies is beyond the scope of this introductory article, we explore timing and tax considerations in greater depth in our companion piece, &ldquo;Maximizing Your RESP: Withdraw Wisely<span style="line-height: 0;">2</span>.&rdquo;</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div>
+        <div>
+        <div>
+        <div>
+        <h3><span>Final Thoughts</span></h3>
+        <p>RESPs are among the most effective and efficient tools available to help families save for post-secondary education in Canada. Whether you are planning for a first child or coordinating education savings for multiple children, understanding the rules and available government incentives can help you maximize the impact of every dollar.</p>
+        <p><span>To learn more about how a RESP can fit into your broader financial plan, speak with your Wellington-Altus advisor about building a strategy to support your family&rsquo;s educational goals.</span></p>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div>
+        <div>
+        <div>
+        <div>
+        <p><span style="line-height: 0;">1</span>&nbsp;Where a year of RESP contributions are missed, or the RESP is opened later in the child&rsquo;s life, there may be an opportunity to make &ldquo;catch up&rdquo; contributions to recover some prior year CESG amounts within certain limits.</p>
+        <p><span style="line-height: 0;">2</span>&nbsp;<span style="text-decoration: underline;">Maximizing Your RESP: Withdraw Wisely &ndash; Wellington-Altus</span></p>
+        </div>
+        </div>
+        </div>
+        </div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260422T194950Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{13D6CCE7-A6C3-4EE1-A1D9-8A8E34225ED7}"
     - ID: "3e700dce-26eb-4bf0-990f-9d9fe555990d"
       Hint: Excerpt
-      Value: Online financial scams pose a significant threat to individuals' financial security, requiring heightened awareness and caution. Stay vigilant against phishing attempts, investment schemes, and online shopping fraud to protect yourself online.
+      Value: "Every parent hopes to provide their children with the best possible opportunities, particularly when it comes to education. As the cost of higher education in Canada continues to rise, many families find it challenging to determine how best to save and invest for these future expenses. One effective planning tool is the Registered Education Savings Plan (RESP), a tax-efficient vehicle designed to help families save for post-secondary education while offering access to valuable government incentives."
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: Beware of financial online scams
+      Value: "Registered Education Savings Plan (RESP) 101: A Smarter Way to Save for Education"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johannes.zijlstra@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9a8f4b11-df7d-405f-9baa-6d9e6196dca2"
+      Value: "1d33787d-10ae-4ded-b4cd-c74401eb96df"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johannes.zijlstra@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260422T195907Z
     - ID: "e81c4912-a4d2-4466-842c-02f0b2c9dc42"
       Hint: Title
-      Value: "Protect yourself: Beware of financial online scams"
+      Value: "Registered Education Savings Plan (RESP) 101: A Smarter Way to Save for Education"
 - Language: "fr-CA"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

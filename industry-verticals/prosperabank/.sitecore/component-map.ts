@@ -16,14 +16,18 @@ import * as ContentBlock from 'src/components/ContentBlock';
 import * as Container from 'src/components/Container';
 import * as ColumnSplitter from 'src/components/ColumnSplitter';
 import * as CdpPageView from 'src/components/CdpPageView';
+import * as WealthManagementImageBlock from 'src/components/WealthManagement/WealthManagementImageBlock';
+import * as WealthManagementHeader from 'src/components/WealthManagement/WealthManagementHeader';
+import * as WealthManagementFullWidthBanner from 'src/components/WealthManagement/WealthManagementFullWidthBanner';
+import * as WealthManagementFooter from 'src/components/WealthManagement/WealthManagementFooter';
 import * as ThemeSwitcher from 'src/components/Utilities/ThemeSwitcher';
 import * as LoanCalculator from 'src/components/Utilities/LoanCalculator';
 import * as LanguageSwitcher from 'src/components/Utilities/LanguageSwitcher';
 import * as ContactForm from 'src/components/Utilities/ContactForm';
 import * as ApplicationForm from 'src/components/Utilities/ApplicationForm';
-import * as Spinner from 'src/components/Search/components/Spinner/Spinner';
 import * as PreviewSearchIcon from 'src/components/Search/PreviewSearch/PreviewSearchIcon';
 import * as PreviewSearch from 'src/components/Search/PreviewSearch/PreviewSearch';
+import * as Spinner from 'src/components/Search/components/Spinner/Spinner';
 import * as TwoColumnCta from 'src/components/PageContent/TwoColumnCta';
 import * as ThreeColumnCta from 'src/components/PageContent/ThreeColumnCta';
 import * as Testimonials from 'src/components/PageContent/Testimonials';
@@ -80,14 +84,18 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['Container', { ...Container }],
   ['ColumnSplitter', { ...ColumnSplitter }],
   ['CdpPageView', { ...CdpPageView }],
+  ['WealthManagementImageBlock', { ...WealthManagementImageBlock }],
+  ['WealthManagementHeader', { ...WealthManagementHeader, componentType: 'client' }],
+  ['WealthManagementFullWidthBanner', { ...WealthManagementFullWidthBanner }],
+  ['WealthManagementFooter', { ...WealthManagementFooter, componentType: 'client' }],
   ['ThemeSwitcher', { ...ThemeSwitcher }],
   ['LoanCalculator', { ...LoanCalculator }],
   ['LanguageSwitcher', { ...LanguageSwitcher }],
   ['ContactForm', { ...ContactForm }],
   ['ApplicationForm', { ...ApplicationForm }],
-  ['Spinner', { ...Spinner }],
   ['PreviewSearchIcon', { ...PreviewSearchIcon }],
   ['PreviewSearch', { ...PreviewSearch }],
+  ['Spinner', { ...Spinner }],
   ['TwoColumnCta', { ...TwoColumnCta }],
   ['ThreeColumnCta', { ...ThreeColumnCta }],
   ['Testimonials', { ...Testimonials }],
